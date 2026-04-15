@@ -1,23 +1,31 @@
 {
   "rewrites": [
-    { "source": "/analisis-handball", "destination": "/" },
-    { "source": "/estadisticas-handball", "destination": "/" },
-    { "source": "/scouting-handball", "destination": "/" },
-    { "source": "/software-handball", "destination": "/" }
+    { "source": "/blog",                                    "destination": "/blog/index.html" },
+    { "source": "/blog/",                                   "destination": "/blog/index.html" },
+    { "source": "/blog/como-analizar-partido-handball",     "destination": "/blog/como-analizar-partido-handball/index.html" },
+    { "source": "/blog/como-analizar-partido-handball/",    "destination": "/blog/como-analizar-partido-handball/index.html" },
+    { "source": "/blog/estadisticas-handball-avanzadas",    "destination": "/blog/estadisticas-handball-avanzadas/index.html" },
+    { "source": "/blog/estadisticas-handball-avanzadas/",   "destination": "/blog/estadisticas-handball-avanzadas/index.html" },
+    { "source": "/blog/scouting-handball-analisis-rival",   "destination": "/blog/scouting-handball-analisis-rival/index.html" },
+    { "source": "/blog/scouting-handball-analisis-rival/",  "destination": "/blog/scouting-handball-analisis-rival/index.html" },
+    { "source": "/analisis-handball",                       "destination": "/" },
+    { "source": "/estadisticas-handball",                   "destination": "/" },
+    { "source": "/scouting-handball",                       "destination": "/" },
+    { "source": "/software-handball",                       "destination": "/" }
   ],
   "headers": [
     {
       "source": "/(.*)",
       "headers": [
-        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-Frame-Options",        "value": "DENY" },
         { "key": "X-Content-Type-Options", "value": "nosniff" },
-        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+        { "key": "Referrer-Policy",        "value": "strict-origin-when-cross-origin" }
       ]
     },
     {
-      "source": "/index.html",
+      "source": "/blog/(.*)\\.html",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }
+        { "key": "Cache-Control", "value": "public, max-age=86400, must-revalidate" }
       ]
     }
   ]
