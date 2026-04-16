@@ -1,43 +1,101 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" id="html-root">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO Primary -->
-  <title>HandballPro IA – Análisis Estadístico de Handball con Inteligencia Artificial</title>
-  <meta name="description" content="Plataforma de análisis estadístico de handball basada en inteligencia artificial. Estadísticas en vivo, heatmaps, scouting, análisis de arqueros y preparación táctica para futuros partidos." />
-  <meta name="keywords" content="análisis handball, estadísticas handball, scouting handball, análisis deportivo, software handball, inteligencia artificial handball, análisis táctico handball, heatmap handball, arqueros handball, preparación táctica" />
-  <meta name="author" content="HandballPro IA" />
+  <!-- SEO Primary (updated dynamically by JS) -->
+  <title id="meta-title">HandballPro IA – Análisis Estadístico de Handball con Inteligencia Artificial</title>
+  <meta id="meta-description" name="description" content="Plataforma de análisis estadístico de handball basada en inteligencia artificial. Estadísticas en vivo, heatmaps, scouting, análisis de arqueros y preparación táctica para futuros partidos." />
+  <meta id="meta-keywords" name="keywords" content="análisis handball, estadísticas handball, scouting handball, análisis deportivo, software handball, inteligencia artificial handball, análisis táctico handball, heatmap handball" />
+  <meta name="author" content="Mariano Losada – HandballPro IA" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://handballpro.vercel.app/" />
-
-  <!-- Google Site Verification -->
   <meta name="google-site-verification" content="oythYl0X5XkcwGG-wGA6VRzISC6hU4VrnajQ6M_sz8g" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="HandballPro IA – Análisis de Handball con Inteligencia Artificial" />
-  <meta property="og:description" content="Tomá decisiones tácticas basadas en datos. Análisis en vivo, insights automáticos, heatmaps y scouting para futuros partidos." />
+  <meta id="og-title" property="og:title" content="HandballPro IA – Análisis de Handball con Inteligencia Artificial" />
+  <meta id="og-description" property="og:description" content="Tomá decisiones tácticas basadas en datos. Análisis en vivo, insights automáticos, heatmaps y scouting para futuros partidos." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://handballpro.vercel.app/" />
-  <meta property="og:locale" content="es_AR" />
+  <meta id="og-locale" property="og:locale" content="es_AR" />
+  <meta property="og:image" content="https://handballpro.vercel.app/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="HandballPro IA – Análisis Estadístico de Handball" />
-  <meta name="twitter:description" content="La plataforma de análisis deportivo para entrenadores y analistas de handball." />
+  <meta id="tw-title" name="twitter:title" content="HandballPro IA – Handball Statistics & AI Analysis" />
+  <meta id="tw-description" name="twitter:description" content="AI-powered handball statistics platform. Live analysis, heatmaps, tactical scouting and advanced metrics." />
+  <meta name="twitter:image" content="https://handballpro.vercel.app/og-image.png" />
+  <meta name="twitter:site" content="@handballpro_ia" />
 
-  <!-- Schema.org Structured Data -->
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="es" href="https://handballpro.vercel.app/" />
+  <link rel="alternate" hreflang="es-AR" href="https://handballpro.vercel.app/" />
+  <link rel="alternate" hreflang="en" href="https://handballpro.vercel.app/" />
+  <link rel="alternate" hreflang="x-default" href="https://handballpro.vercel.app/" />
+
+  <!-- Schema.org: SoftwareApplication -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "HandballPro IA",
     "applicationCategory": "SportsApplication",
-    "description": "Plataforma de análisis estadístico de handball con inteligencia artificial para análisis en vivo, scouting y preparación táctica.",
+    "description": "AI-powered handball statistics and analysis platform. Live match analysis, heatmaps, scouting and tactical preparation.",
     "operatingSystem": "Web",
-    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "ARS" },
-    "url": "https://v9-1.vercel.app/"
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "url": "https://handballpro.vercel.app/",
+    "inLanguage": ["es", "en"],
+    "author": { "@type": "Person", "name": "Mariano Losada", "email": "marianonicolaslosada@gmail.com" },
+    "creator": { "@type": "Person", "name": "Mariano Losada" }
+  }
+  </script>
+
+  <!-- Schema.org: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "HandballPro IA",
+    "url": "https://handballpro.vercel.app/",
+    "description": "Handball statistics and AI analysis platform",
+    "inLanguage": ["es", "en"],
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://handballpro.vercel.app/blog/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Schema.org: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "HandballPro IA",
+    "url": "https://handballpro.vercel.app/",
+    "logo": "https://handballpro.vercel.app/logo.png",
+    "contactPoint": { "@type": "ContactPoint", "email": "marianonicolaslosada@gmail.com", "contactType": "customer support", "availableLanguage": ["Spanish", "English"] },
+    "founder": { "@type": "Person", "name": "Mariano Losada" },
+    "sameAs": ["https://github.com/marianodip12"]
+  }
+  </script>
+
+  <!-- Schema.org: ItemList Blog -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "HandballPro IA Blog Articles",
+    "url": "https://handballpro.vercel.app/blog/",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "url": "https://handballpro.vercel.app/blog/como-analizar-partido-handball/", "name": "Cómo Analizar un Partido de Handball con Datos" },
+      { "@type": "ListItem", "position": 2, "url": "https://handballpro.vercel.app/blog/estadisticas-handball-avanzadas/", "name": "Estadísticas de Handball: Cuáles Importan Realmente" },
+      { "@type": "ListItem", "position": 3, "url": "https://handballpro.vercel.app/blog/scouting-handball-analisis-rival/", "name": "Scouting en Handball: Analizá a tu Rival" }
+    ]
   }
   </script>
 
@@ -47,1077 +105,369 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,300&display=swap" rel="stylesheet" />
 
   <style>
-    /* ─── DESIGN SYSTEM ─── */
     :root {
-      --bg:        #040810;
-      --bg2:       #080f1e;
-      --bg3:       #0c1628;
-      --surface:   #0f1e35;
-      --border:    #1a2e4a;
-      --accent:    #00d4ff;
-      --accent2:   #ff6b35;
-      --accent3:   #00ff88;
-      --text:      #e8f0f8;
-      --muted:     #7a8fa8;
-      --display:   'Bebas Neue', sans-serif;
-      --body:      'DM Sans', sans-serif;
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: var(--body);
-      font-size: 17px;
-      line-height: 1.65;
-      overflow-x: hidden;
-    }
-
-    /* ─── NOISE TEXTURE OVERLAY ─── */
-    body::before {
-      content: '';
-      position: fixed;
-      inset: 0;
-      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");
-      pointer-events: none;
-      z-index: 0;
-    }
-
-    /* ─── GRID ─── */
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    /* ─── NAV ─── */
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 100;
-      padding: 16px 0;
-      background: rgba(4,8,16,0.85);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--border);
-    }
-
-    nav .inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
-
-    .logo {
-      font-family: var(--display);
-      font-size: 1.8rem;
-      letter-spacing: 0.05em;
-      color: var(--text);
-      text-decoration: none;
-    }
-    .logo span { color: var(--accent); }
-
-    .nav-links {
-      display: flex;
-      gap: 32px;
-      list-style: none;
-    }
-
-    .nav-links a {
-      color: var(--muted);
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      transition: color 0.2s;
-    }
-    .nav-links a:hover { color: var(--text); }
-
-    .nav-cta {
-      background: var(--accent);
-      color: #040810 !important;
-      padding: 8px 20px;
-      border-radius: 4px;
-      font-weight: 700 !important;
-      letter-spacing: 0.06em;
-    }
-    .nav-cta:hover { opacity: 0.85; }
-
-    /* ─── BUTTONS ─── */
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 14px 32px;
-      border-radius: 4px;
-      font-family: var(--body);
-      font-size: 1rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      text-decoration: none;
-      cursor: pointer;
-      border: none;
-      transition: all 0.2s;
-    }
-
-    .btn-primary {
-      background: var(--accent);
-      color: #040810;
-    }
-    .btn-primary:hover { background: #00bcdf; transform: translateY(-1px); }
-
-    .btn-secondary {
-      background: transparent;
-      color: var(--text);
-      border: 1.5px solid var(--border);
-    }
-    .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
-
-    .btn-orange {
-      background: var(--accent2);
-      color: #fff;
-    }
-    .btn-orange:hover { opacity: 0.88; transform: translateY(-1px); }
-
-    /* ─── HERO ─── */
-    #hero {
-      position: relative;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      padding: 120px 0 80px;
-      overflow: hidden;
-    }
-
-    .hero-grid-bg {
-      position: absolute;
-      inset: 0;
-      background-image:
-        linear-gradient(rgba(0,212,255,0.04) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0,212,255,0.04) 1px, transparent 1px);
-      background-size: 60px 60px;
-    }
-
-    .hero-glow {
-      position: absolute;
-      top: -20%;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 900px;
-      height: 600px;
-      background: radial-gradient(ellipse at center, rgba(0,212,255,0.12) 0%, transparent 70%);
-      pointer-events: none;
-    }
-
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      max-width: 900px;
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(0,212,255,0.08);
-      border: 1px solid rgba(0,212,255,0.25);
-      color: var(--accent);
-      padding: 6px 16px;
-      border-radius: 100px;
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      margin-bottom: 28px;
-    }
-
-    .badge-dot {
-      width: 6px;
-      height: 6px;
-      background: var(--accent3);
-      border-radius: 50%;
-      animation: pulse 2s ease-in-out infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.4; transform: scale(0.8); }
-    }
-
-    h1 {
-      font-family: var(--display);
-      font-size: clamp(3.5rem, 8vw, 7.5rem);
-      line-height: 0.95;
-      letter-spacing: 0.02em;
-      margin-bottom: 28px;
-    }
-
-    h1 .line-accent { color: var(--accent); }
-    h1 .line-orange { color: var(--accent2); }
-
-    .hero-sub {
-      font-size: 1.2rem;
-      color: var(--muted);
-      max-width: 600px;
-      margin-bottom: 44px;
-      font-weight: 300;
-    }
-
-    .hero-ctas {
-      display: flex;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .hero-stats {
-      display: flex;
-      gap: 48px;
-      margin-top: 72px;
-      padding-top: 48px;
-      border-top: 1px solid var(--border);
-      flex-wrap: wrap;
-    }
-
-    .stat-item {}
-    .stat-num {
-      font-family: var(--display);
-      font-size: 2.8rem;
-      color: var(--accent);
-      line-height: 1;
-    }
-    .stat-label {
-      font-size: 0.82rem;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-top: 4px;
-    }
-
-    /* ─── SECTIONS ─── */
-    section {
-      padding: 100px 0;
-      position: relative;
-    }
-
-    .section-eyebrow {
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 16px;
-    }
-
-    h2 {
-      font-family: var(--display);
-      font-size: clamp(2.2rem, 5vw, 4rem);
-      letter-spacing: 0.03em;
-      line-height: 1.05;
-      margin-bottom: 20px;
-    }
-
-    .section-lead {
-      font-size: 1.15rem;
-      color: var(--muted);
-      max-width: 620px;
-      margin-bottom: 60px;
-      font-weight: 300;
-    }
-
-    /* ─── AI SECTION ─── */
-    #que-hace {
-      background: var(--bg2);
-    }
-
-    .ia-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2px;
-      background: var(--border);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .ia-cell {
-      background: var(--bg2);
-      padding: 40px;
-      transition: background 0.25s;
-    }
-
-    .ia-cell:hover { background: var(--surface); }
-
-    .ia-icon {
-      font-size: 2rem;
-      margin-bottom: 16px;
-      display: block;
-    }
-
-    .ia-cell h3 {
-      font-family: var(--display);
-      font-size: 1.5rem;
-      letter-spacing: 0.04em;
-      margin-bottom: 10px;
-      color: var(--text);
-    }
-
-    .ia-cell p {
-      font-size: 0.95rem;
-      color: var(--muted);
-      line-height: 1.7;
-    }
-
-    /* ─── FEATURES ─── */
-    .features-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 24px;
-    }
-
-    .feature-card {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 36px;
-      position: relative;
-      overflow: hidden;
-      transition: border-color 0.25s, transform 0.2s;
-    }
-
-    .feature-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 2px;
-      background: linear-gradient(90deg, var(--accent), transparent);
-      opacity: 0;
-      transition: opacity 0.25s;
-    }
-
-    .feature-card:hover {
-      border-color: rgba(0,212,255,0.3);
-      transform: translateY(-3px);
-    }
-    .feature-card:hover::before { opacity: 1; }
-
-    .feature-tag {
-      display: inline-block;
-      background: rgba(0,212,255,0.08);
-      color: var(--accent);
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      padding: 4px 10px;
-      border-radius: 3px;
-      margin-bottom: 20px;
-    }
-
-    .feature-card h3 {
-      font-family: var(--display);
-      font-size: 1.6rem;
-      letter-spacing: 0.03em;
-      margin-bottom: 12px;
-    }
-
-    .feature-card p {
-      font-size: 0.92rem;
-      color: var(--muted);
-      line-height: 1.7;
-    }
-
-    /* ─── SCOUTING SECTION ─── */
-    #scouting {
-      background: linear-gradient(180deg, var(--bg) 0%, var(--bg2) 50%, var(--bg) 100%);
-    }
-
-    .scouting-layout {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 60px;
-      align-items: center;
-    }
-
-    .scouting-visual {
-      background: var(--bg3);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 40px;
-      position: relative;
-    }
-
-    .scouting-visual .court-diagram {
-      width: 100%;
-      aspect-ratio: 16/10;
-      background: var(--surface);
-      border-radius: 8px;
-      border: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      overflow: hidden;
-      margin-bottom: 24px;
-    }
-
-    .court-inner {
-      position: relative;
-      width: 85%;
-      height: 75%;
-      border: 2px solid rgba(0,212,255,0.2);
-      border-radius: 4px;
-    }
-
-    .court-zone {
-      position: absolute;
-      border-radius: 50%;
-      border: 1.5px solid rgba(0,212,255,0.15);
-    }
-
-    .zone-hot {
-      width: 40%;
-      height: 60%;
-      top: 20%;
-      left: -5%;
-      background: radial-gradient(ellipse, rgba(255,107,53,0.3) 0%, transparent 70%);
-      border-color: rgba(255,107,53,0.3);
-    }
-
-    .zone-cold {
-      width: 30%;
-      height: 50%;
-      top: 25%;
-      right: 5%;
-      background: radial-gradient(ellipse, rgba(0,212,255,0.15) 0%, transparent 70%);
-    }
-
-    .zone-dot {
-      position: absolute;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .scouting-pills {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-    }
-
-    .scouting-pill {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 14px 18px;
-    }
-
-    .pill-icon {
-      font-size: 1.3rem;
-      flex-shrink: 0;
-    }
-
-    .pill-text {}
-    .pill-title {
-      font-weight: 600;
-      font-size: 0.92rem;
-      color: var(--text);
-      margin-bottom: 2px;
-    }
-    .pill-desc {
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-
-    .scouting-copy h2 { margin-bottom: 24px; }
-
-    .scouting-features {
-      display: flex;
-      flex-direction: column;
-      gap: 28px;
-      margin-top: 40px;
-    }
-
-    .scout-item {
-      display: flex;
-      gap: 20px;
-    }
-
-    .scout-num {
-      font-family: var(--display);
-      font-size: 2.5rem;
-      color: var(--accent);
-      line-height: 1;
-      flex-shrink: 0;
-      width: 48px;
-    }
-
-    .scout-item h4 {
-      font-weight: 700;
-      font-size: 1rem;
-      margin-bottom: 6px;
-    }
-
-    .scout-item p {
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-
-    /* ─── FOR WHOM ─── */
-    #para-quien {
-      background: var(--bg2);
-    }
-
-    .audience-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 2px;
-      background: var(--border);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      overflow: hidden;
-    }
-
-    .audience-card {
-      background: var(--bg2);
-      padding: 48px 36px;
-      text-align: center;
-      transition: background 0.25s;
-    }
-
-    .audience-card:hover { background: var(--surface); }
-
-    .audience-emoji {
-      font-size: 3rem;
-      display: block;
-      margin-bottom: 20px;
-    }
-
-    .audience-card h3 {
-      font-family: var(--display);
-      font-size: 1.8rem;
-      letter-spacing: 0.04em;
-      margin-bottom: 14px;
-    }
-
-    .audience-card p {
-      font-size: 0.9rem;
-      color: var(--muted);
-      line-height: 1.7;
-    }
-
-    .audience-list {
-      list-style: none;
-      margin-top: 16px;
-      text-align: left;
-    }
-
-    .audience-list li {
-      font-size: 0.88rem;
-      color: var(--muted);
-      padding: 4px 0;
-      display: flex;
-      align-items: flex-start;
-      gap: 8px;
-    }
-
-    .audience-list li::before {
-      content: '→';
-      color: var(--accent);
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
-
-    /* ─── ROADMAP ─── */
-    .roadmap-track {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-    }
-
-    .roadmap-track::before {
-      content: '';
-      position: absolute;
-      left: 22px;
-      top: 0;
-      bottom: 0;
-      width: 2px;
-      background: linear-gradient(180deg, var(--accent), var(--border));
-    }
-
-    .roadmap-item {
-      display: flex;
-      gap: 32px;
-      padding-bottom: 48px;
-      position: relative;
-    }
-
-    .roadmap-node {
-      width: 46px;
-      height: 46px;
-      border-radius: 50%;
-      border: 2px solid var(--border);
-      background: var(--bg2);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      font-size: 1rem;
-      position: relative;
-      z-index: 1;
-    }
-
-    .roadmap-node.active {
-      border-color: var(--accent);
-      background: rgba(0,212,255,0.1);
-    }
-
-    .roadmap-body {
-      padding-top: 10px;
-      flex: 1;
-    }
-
-    .roadmap-phase {
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 6px;
-    }
-
-    .roadmap-body h3 {
-      font-family: var(--display);
-      font-size: 1.5rem;
-      letter-spacing: 0.03em;
-      margin-bottom: 8px;
-    }
-
-    .roadmap-body p {
-      font-size: 0.9rem;
-      color: var(--muted);
-    }
-
-    .roadmap-badge-active {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: rgba(0,255,136,0.1);
-      border: 1px solid rgba(0,255,136,0.3);
-      color: var(--accent3);
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 3px 10px;
-      border-radius: 100px;
-      margin-bottom: 8px;
-    }
-
-    /* ─── DEMO CTA ─── */
-    #demo-cta {
-      background: var(--bg2);
-      border-top: 1px solid var(--border);
-      border-bottom: 1px solid var(--border);
-    }
-
-    .demo-inner {
-      text-align: center;
-      max-width: 720px;
-      margin: 0 auto;
-    }
-
-    .demo-inner h2 { margin-bottom: 20px; }
-    .demo-inner p {
-      color: var(--muted);
-      margin-bottom: 40px;
-      font-size: 1.1rem;
-    }
-
-    /* ─── DONATIONS ─── */
-    #donaciones {
-      background: var(--bg);
-    }
-
-    .donation-card {
-      background: var(--bg2);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 56px 48px;
-      max-width: 760px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .donation-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, var(--accent2), var(--accent));
-    }
-
-    .donation-alias {
-      display: inline-block;
-      font-family: monospace;
-      font-size: 1.4rem;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      padding: 12px 24px;
-      border-radius: 6px;
-      color: var(--accent);
-      letter-spacing: 0.06em;
-      margin: 28px 0;
-      cursor: pointer;
-      transition: background 0.2s;
-      user-select: all;
-    }
-
-    .donation-alias:hover { background: var(--bg3); }
-
-    .donation-copy-hint {
-      font-size: 0.8rem;
-      color: var(--muted);
-      margin-top: 8px;
-    }
-
-    /* ─── FEEDBACK ─── */
-    #feedback {
-      background: var(--bg2);
-    }
-
-    .feedback-card {
-      background: var(--bg3);
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 56px 48px;
-      max-width: 760px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .feedback-card::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, var(--accent), var(--accent3));
-    }
-
-    .email-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      font-family: monospace;
-      font-size: 1.1rem;
-      color: var(--accent);
-      margin: 24px 0 32px;
-      text-decoration: none;
-      border-bottom: 1px solid rgba(0,212,255,0.3);
-      padding-bottom: 2px;
-      transition: opacity 0.2s;
-    }
-    .email-link:hover { opacity: 0.75; }
-
-    /* ─── FOOTER ─── */
-    footer {
-      padding: 60px 0;
-      border-top: 1px solid var(--border);
-    }
-
-    .footer-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: gap;
-    }
-
-    .footer-note {
-      font-size: 0.82rem;
-      color: var(--muted);
-    }
-
-    /* ─── MOBILE ─── */
-    @media (max-width: 900px) {
-      .ia-grid { grid-template-columns: 1fr; }
-      .scouting-layout { grid-template-columns: 1fr; }
-      .audience-grid { grid-template-columns: 1fr; }
-      .nav-links { display: none; }
-      .hero-stats { gap: 32px; }
-    }
-
-    @media (max-width: 600px) {
-      h1 { font-size: 3rem; }
-      .features-list { grid-template-columns: 1fr; }
-      .hero-ctas { flex-direction: column; }
-      .donation-card, .feedback-card { padding: 36px 28px; }
-    }
-
-    /* ─── SCROLL ANIMATIONS ─── */
-    [data-reveal] {
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.6s ease, transform 0.6s ease;
-    }
-
-    [data-reveal].revealed {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* ─── COPY TOAST ─── */
-    .toast {
-      position: fixed;
-      bottom: 32px;
-      right: 32px;
-      background: var(--accent3);
-      color: #040810;
-      padding: 12px 24px;
-      border-radius: 6px;
-      font-weight: 700;
-      font-size: 0.88rem;
-      z-index: 999;
-      opacity: 0;
-      transform: translateY(8px);
-      transition: all 0.3s;
-      pointer-events: none;
-    }
-
-    .toast.show {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* ─── WARNING BANNER ─── */
-    .dev-banner {
-      background: rgba(255,107,53,0.08);
-      border-bottom: 1px solid rgba(255,107,53,0.2);
-      padding: 10px 0;
-      text-align: center;
-    }
-
-    .dev-banner p {
-      font-size: 0.82rem;
-      color: var(--accent2);
-      font-weight: 500;
-    }
-
-    /* ─── LIVE INDICATOR ─── */
-    .live-ring {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: rgba(0,255,136,0.06);
-      border: 1px solid rgba(0,255,136,0.2);
-      border-radius: 100px;
-      padding: 5px 14px;
-      font-size: 0.78rem;
-      color: var(--accent3);
-      font-weight: 600;
-      letter-spacing: 0.08em;
-    }
-
-    .live-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      background: var(--accent3);
-      animation: pulse 1.5s ease-in-out infinite;
+      --bg:#040810;--bg2:#080f1e;--bg3:#0c1628;
+      --surface:#0f1e35;--border:#1a2e4a;
+      --accent:#00d4ff;--accent2:#ff6b35;--accent3:#00ff88;
+      --text:#e8f0f8;--muted:#7a8fa8;
+      --display:'Bebas Neue',sans-serif;--body:'DM Sans',sans-serif;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    html{scroll-behavior:smooth;}
+    body{background:var(--bg);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.65;overflow-x:hidden;}
+    body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.035'/%3E%3C/svg%3E");pointer-events:none;z-index:0;}
+    .container{max-width:1200px;margin:0 auto;padding:0 24px;}
+
+    /* NAV */
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:16px 0;background:rgba(4,8,16,0.88);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);}
+    nav .inner{display:flex;align-items:center;justify-content:space-between;max-width:1200px;margin:0 auto;padding:0 24px;}
+    .logo{font-family:var(--display);font-size:1.8rem;letter-spacing:0.05em;color:var(--text);text-decoration:none;}
+    .logo span{color:var(--accent);}
+    .nav-right{display:flex;align-items:center;gap:20px;}
+    .nav-links{display:flex;gap:28px;list-style:none;align-items:center;}
+    .nav-links a{color:var(--muted);text-decoration:none;font-size:0.88rem;font-weight:500;letter-spacing:0.04em;transition:color 0.2s;}
+    .nav-links a:hover{color:var(--text);}
+    .nav-cta{background:var(--accent);color:#040810 !important;padding:8px 20px;border-radius:4px;font-weight:700 !important;letter-spacing:0.06em;}
+    .nav-cta:hover{opacity:0.85;}
+
+    /* LANG SWITCHER */
+    .lang-switcher{display:flex;align-items:center;background:rgba(255,255,255,0.05);border:1px solid var(--border);border-radius:6px;overflow:hidden;flex-shrink:0;}
+    .lang-btn{padding:5px 11px;font-size:0.75rem;font-weight:700;letter-spacing:0.1em;color:var(--muted);cursor:pointer;background:none;border:none;transition:all 0.2s;font-family:var(--body);}
+    .lang-btn:hover{color:var(--text);}
+    .lang-btn.active{background:var(--accent);color:#040810;}
+
+    /* BUTTONS */
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;border-radius:4px;font-family:var(--body);font-size:1rem;font-weight:700;letter-spacing:0.05em;text-decoration:none;cursor:pointer;border:none;transition:all 0.2s;}
+    .btn-primary{background:var(--accent);color:#040810;}
+    .btn-primary:hover{background:#00bcdf;transform:translateY(-1px);}
+    .btn-secondary{background:transparent;color:var(--text);border:1.5px solid var(--border);}
+    .btn-secondary:hover{border-color:var(--accent);color:var(--accent);}
+    .btn-orange{background:var(--accent2);color:#fff;}
+    .btn-orange:hover{opacity:0.88;transform:translateY(-1px);}
+
+    /* HERO */
+    #hero{position:relative;min-height:100vh;display:flex;align-items:center;padding:120px 0 80px;overflow:hidden;}
+    .hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(0,212,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(0,212,255,0.04) 1px,transparent 1px);background-size:60px 60px;}
+    .hero-glow{position:absolute;top:-20%;left:50%;transform:translateX(-50%);width:900px;height:600px;background:radial-gradient(ellipse at center,rgba(0,212,255,0.12) 0%,transparent 70%);pointer-events:none;}
+    .hero-content{position:relative;z-index:1;max-width:900px;}
+    .badge{display:inline-flex;align-items:center;gap:8px;background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.25);color:var(--accent);padding:6px 16px;border-radius:100px;font-size:0.78rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:28px;}
+    .badge-dot{width:6px;height:6px;background:var(--accent3);border-radius:50%;animation:pulse 2s ease-in-out infinite;}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.4;transform:scale(0.8);}}
+    h1{font-family:var(--display);font-size:clamp(3.5rem,8vw,7.5rem);line-height:0.95;letter-spacing:0.02em;margin-bottom:28px;}
+    h1 .line-accent{color:var(--accent);}
+    h1 .line-orange{color:var(--accent2);}
+    .hero-sub{font-size:1.2rem;color:var(--muted);max-width:600px;margin-bottom:44px;font-weight:300;}
+    .hero-ctas{display:flex;gap:16px;flex-wrap:wrap;}
+    .hero-stats{display:flex;gap:48px;margin-top:72px;padding-top:48px;border-top:1px solid var(--border);flex-wrap:wrap;}
+    .stat-num{font-family:var(--display);font-size:2.8rem;color:var(--accent);line-height:1;}
+    .stat-label{font-size:0.82rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.1em;margin-top:4px;}
+
+    /* SECTIONS */
+    section{padding:100px 0;position:relative;}
+    .section-eyebrow{font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:var(--accent);margin-bottom:16px;}
+    h2{font-family:var(--display);font-size:clamp(2.2rem,5vw,4rem);letter-spacing:0.03em;line-height:1.05;margin-bottom:20px;}
+    .section-lead{font-size:1.15rem;color:var(--muted);max-width:620px;margin-bottom:60px;font-weight:300;}
+
+    /* IA SECTION */
+    #que-hace{background:var(--bg2);}
+    .ia-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--border);border:1px solid var(--border);border-radius:8px;overflow:hidden;}
+    .ia-cell{background:var(--bg2);padding:40px;transition:background 0.25s;}
+    .ia-cell:hover{background:var(--surface);}
+    .ia-icon{font-size:2rem;margin-bottom:16px;display:block;}
+    .ia-cell h3{font-family:var(--display);font-size:1.5rem;letter-spacing:0.04em;margin-bottom:10px;color:var(--text);}
+    .ia-cell p{font-size:0.95rem;color:var(--muted);line-height:1.7;}
+
+    /* FEATURES */
+    .features-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:24px;}
+    .feature-card{background:var(--bg2);border:1px solid var(--border);border-radius:8px;padding:36px;position:relative;overflow:hidden;transition:border-color 0.25s,transform 0.2s;}
+    .feature-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),transparent);opacity:0;transition:opacity 0.25s;}
+    .feature-card:hover{border-color:rgba(0,212,255,0.3);transform:translateY(-3px);}
+    .feature-card:hover::before{opacity:1;}
+    .feature-tag{display:inline-block;background:rgba(0,212,255,0.08);color:var(--accent);font-size:0.7rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:4px 10px;border-radius:3px;margin-bottom:20px;}
+    .feature-card h3{font-family:var(--display);font-size:1.6rem;letter-spacing:0.03em;margin-bottom:12px;}
+    .feature-card p{font-size:0.92rem;color:var(--muted);line-height:1.7;}
+
+    /* SCOUTING */
+    #scouting{background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 50%,var(--bg) 100%);}
+    .scouting-layout{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
+    .scouting-visual{background:var(--bg3);border:1px solid var(--border);border-radius:12px;padding:40px;position:relative;}
+    .court-diagram{width:100%;aspect-ratio:16/10;background:var(--surface);border-radius:8px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;margin-bottom:24px;}
+    .court-inner{position:relative;width:85%;height:75%;border:2px solid rgba(0,212,255,0.2);border-radius:4px;}
+    .court-zone{position:absolute;border-radius:50%;border:1.5px solid rgba(0,212,255,0.15);}
+    .zone-hot{width:40%;height:60%;top:20%;left:-5%;background:radial-gradient(ellipse,rgba(255,107,53,0.3) 0%,transparent 70%);border-color:rgba(255,107,53,0.3);}
+    .zone-cold{width:30%;height:50%;top:25%;right:5%;background:radial-gradient(ellipse,rgba(0,212,255,0.15) 0%,transparent 70%);}
+    .zone-dot{position:absolute;border-radius:50%;transform:translate(-50%,-50%);}
+    .scouting-pills{display:flex;flex-direction:column;gap:12px;}
+    .scouting-pill{display:flex;align-items:center;gap:14px;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:14px 18px;}
+    .pill-icon{font-size:1.3rem;flex-shrink:0;}
+    .pill-title{font-weight:600;font-size:0.92rem;color:var(--text);margin-bottom:2px;}
+    .pill-desc{font-size:0.8rem;color:var(--muted);}
+    .scouting-copy h2{margin-bottom:24px;}
+    .scouting-features{display:flex;flex-direction:column;gap:28px;margin-top:40px;}
+    .scout-item{display:flex;gap:20px;}
+    .scout-num{font-family:var(--display);font-size:2.5rem;color:var(--accent);line-height:1;flex-shrink:0;width:48px;}
+    .scout-item h4{font-weight:700;font-size:1rem;margin-bottom:6px;}
+    .scout-item p{font-size:0.9rem;color:var(--muted);}
+
+    /* FOR WHOM */
+    #para-quien{background:var(--bg2);}
+    .audience-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);border:1px solid var(--border);border-radius:8px;overflow:hidden;}
+    .audience-card{background:var(--bg2);padding:48px 36px;text-align:center;transition:background 0.25s;}
+    .audience-card:hover{background:var(--surface);}
+    .audience-emoji{font-size:3rem;display:block;margin-bottom:20px;}
+    .audience-card h3{font-family:var(--display);font-size:1.8rem;letter-spacing:0.04em;margin-bottom:14px;}
+    .audience-card p{font-size:0.9rem;color:var(--muted);line-height:1.7;}
+    .audience-list{list-style:none;margin-top:16px;text-align:left;}
+    .audience-list li{font-size:0.88rem;color:var(--muted);padding:4px 0;display:flex;align-items:flex-start;gap:8px;}
+    .audience-list li::before{content:'→';color:var(--accent);flex-shrink:0;margin-top:1px;}
+
+    /* ROADMAP */
+    .roadmap-track{position:relative;display:flex;flex-direction:column;gap:0;}
+    .roadmap-track::before{content:'';position:absolute;left:22px;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--accent),var(--border));}
+    .roadmap-item{display:flex;gap:32px;padding-bottom:48px;position:relative;}
+    .roadmap-node{width:46px;height:46px;border-radius:50%;border:2px solid var(--border);background:var(--bg2);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;position:relative;z-index:1;}
+    .roadmap-node.active{border-color:var(--accent);background:rgba(0,212,255,0.1);}
+    .roadmap-body{padding-top:10px;flex:1;}
+    .roadmap-phase{font-size:0.7rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent);margin-bottom:6px;}
+    .roadmap-body h3{font-family:var(--display);font-size:1.5rem;letter-spacing:0.03em;margin-bottom:8px;}
+    .roadmap-body p{font-size:0.9rem;color:var(--muted);}
+    .roadmap-badge-active{display:inline-flex;align-items:center;gap:6px;background:rgba(0,255,136,0.1);border:1px solid rgba(0,255,136,0.3);color:var(--accent3);font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:3px 10px;border-radius:100px;margin-bottom:8px;}
+
+    /* DEMO CTA */
+    #demo-cta{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+    .demo-inner{text-align:center;max-width:720px;margin:0 auto;}
+    .demo-inner h2{margin-bottom:20px;}
+    .demo-inner p{color:var(--muted);margin-bottom:40px;font-size:1.1rem;}
+
+    /* DONATIONS */
+    #donaciones{background:var(--bg);}
+    .donation-card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:56px 48px;max-width:760px;position:relative;overflow:hidden;}
+    .donation-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent2),var(--accent));}
+    .donation-alias{display:inline-block;font-family:monospace;font-size:1.4rem;background:var(--surface);border:1px solid var(--border);padding:12px 24px;border-radius:6px;color:var(--accent);letter-spacing:0.06em;margin:28px 0;cursor:pointer;transition:background 0.2s;user-select:all;}
+    .donation-alias:hover{background:var(--bg3);}
+    .donation-copy-hint{font-size:0.8rem;color:var(--muted);margin-top:8px;}
+
+    /* FEEDBACK */
+    #feedback{background:var(--bg2);}
+    .feedback-card{background:var(--bg3);border:1px solid var(--border);border-radius:12px;padding:56px 48px;max-width:760px;position:relative;overflow:hidden;}
+    .feedback-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),var(--accent3));}
+    .email-link{display:inline-flex;align-items:center;gap:10px;font-family:monospace;font-size:1.1rem;color:var(--accent);margin:24px 0 32px;text-decoration:none;border-bottom:1px solid rgba(0,212,255,0.3);padding-bottom:2px;transition:opacity 0.2s;}
+    .email-link:hover{opacity:0.75;}
+
+    /* BLOG */
+    #blog{background:var(--bg2);border-top:1px solid var(--border);}
+    .blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:48px;}
+    .blog-card{background:var(--bg3);border:1px solid var(--border);border-radius:12px;padding:28px;text-decoration:none;color:inherit;display:flex;flex-direction:column;gap:12px;transition:border-color 0.25s,transform 0.25s,box-shadow 0.25s;position:relative;overflow:hidden;}
+    .blog-card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,212,255,0.03) 0%,transparent 60%);opacity:0;transition:opacity 0.3s;}
+    .blog-card:hover{border-color:rgba(0,212,255,0.35);transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,0.3);}
+    .blog-card:hover::before{opacity:1;}
+    .blog-tag{display:inline-block;background:rgba(0,212,255,0.08);color:var(--accent);font-size:0.68rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:3px 10px;border-radius:3px;width:fit-content;}
+    .blog-card h3{font-family:var(--display);font-size:1.25rem;letter-spacing:0.03em;line-height:1.25;color:var(--text);}
+    .blog-card p{font-size:0.88rem;color:var(--muted);line-height:1.6;flex:1;}
+    .blog-card-footer{display:flex;align-items:center;justify-content:space-between;font-size:0.78rem;color:var(--muted);margin-top:4px;padding-top:16px;border-top:1px solid var(--border);}
+    .blog-card-footer .read-more{color:var(--accent);font-weight:700;letter-spacing:0.06em;font-size:0.78rem;}
+    .blog-cta-row{display:flex;justify-content:center;margin-top:48px;}
+
+    /* FOOTER */
+    footer{padding:60px 0;border-top:1px solid var(--border);}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;padding-bottom:48px;border-bottom:1px solid var(--border);}
+    .footer-col h5{font-family:var(--display);font-size:0.85rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--muted);margin-bottom:16px;}
+    .footer-col ul{list-style:none;}
+    .footer-col ul li{margin-bottom:10px;}
+    .footer-col ul li a{color:var(--muted);text-decoration:none;font-size:0.88rem;transition:color 0.2s;}
+    .footer-col ul li a:hover{color:var(--accent);}
+    .footer-bottom{padding-top:28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+    .footer-note{font-size:0.82rem;color:var(--muted);}
+    .footer-dev{display:flex;align-items:center;gap:10px;font-size:0.82rem;color:var(--muted);}
+    .footer-dev a{color:var(--accent);text-decoration:none;font-weight:600;}
+    .footer-dev a:hover{text-decoration:underline;}
+    .footer-dev-logo{font-family:var(--display);font-size:1rem;letter-spacing:0.05em;color:var(--text);}
+    .footer-dev-logo span{color:var(--accent);}
+    .footer-seo-keywords{font-size:0.72rem;color:rgba(122,143,168,0.35);margin-top:16px;text-align:center;line-height:1.8;}
+
+    /* MISC */
+    .dev-banner{background:rgba(255,107,53,0.08);border-bottom:1px solid rgba(255,107,53,0.2);padding:10px 0;text-align:center;}
+    .dev-banner p{font-size:0.82rem;color:var(--accent2);font-weight:500;}
+    .live-ring{display:inline-flex;align-items:center;gap:8px;background:rgba(0,255,136,0.06);border:1px solid rgba(0,255,136,0.2);border-radius:100px;padding:5px 14px;font-size:0.78rem;color:var(--accent3);font-weight:600;letter-spacing:0.08em;}
+    .live-dot{width:7px;height:7px;border-radius:50%;background:var(--accent3);animation:pulse 1.5s ease-in-out infinite;}
+    .toast{position:fixed;bottom:32px;right:32px;background:var(--accent3);color:#040810;padding:12px 24px;border-radius:6px;font-weight:700;font-size:0.88rem;z-index:999;opacity:0;transform:translateY(8px);transition:all 0.3s;pointer-events:none;}
+    .toast.show{opacity:1;transform:translateY(0);}
+    [data-reveal]{opacity:0;transform:translateY(24px);transition:opacity 0.6s ease,transform 0.6s ease;}
+    [data-reveal].revealed{opacity:1;transform:translateY(0);}
+
+    /* MOBILE */
+    @media(max-width:900px){
+      .ia-grid,.scouting-layout,.audience-grid{grid-template-columns:1fr;}
+      .nav-links{display:none;}
+      .hero-stats{gap:32px;}
+      .blog-grid{grid-template-columns:1fr;}
+      .footer-grid{grid-template-columns:1fr 1fr;gap:32px;}
+    }
+    @media(max-width:600px){
+      h1{font-size:3rem;}
+      .features-list{grid-template-columns:1fr;}
+      .hero-ctas{flex-direction:column;}
+      .donation-card,.feedback-card{padding:36px 28px;}
+      .footer-grid{grid-template-columns:1fr;}
+      .blog-grid{grid-template-columns:1fr;}
     }
   </style>
 </head>
 <body>
 
   <!-- Dev Banner -->
-  <div class="dev-banner" role="banner" aria-label="Estado del proyecto">
-    <p>⚡ Proyecto en desarrollo activo — Algunas funciones están siendo mejoradas continuamente</p>
+  <div class="dev-banner">
+    <p data-i18n="banner">⚡ Proyecto en desarrollo activo — Algunas funciones están siendo mejoradas continuamente</p>
   </div>
 
   <!-- Nav -->
-  <nav aria-label="Navegación principal">
+  <nav aria-label="Navigation">
     <div class="inner">
       <a href="#hero" class="logo">HANDBALL<span>PRO</span></a>
-      <ul class="nav-links">
-        <li><a href="#que-hace">La IA</a></li>
-        <li><a href="#funcionalidades">Funciones</a></li>
-        <li><a href="#scouting">Scouting</a></li>
-        <li><a href="#roadmap">Roadmap</a></li>
-        <li><a href="#feedback">Feedback</a></li>
-        <li><a href="https://v8-8-five.vercel.app/?_vercel_share=qUTGpgM3IKMcoi1sO5QOXf5kRTNlSPz8" target="_blank" rel="noopener" class="nav-cta">Ver Demo →</a></li>
-      </ul>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#que-hace" data-i18n="nav.ai">La IA</a></li>
+          <li><a href="#funcionalidades" data-i18n="nav.features">Funciones</a></li>
+          <li><a href="#scouting" data-i18n="nav.scouting">Scouting</a></li>
+          <li><a href="#roadmap" data-i18n="nav.roadmap">Roadmap</a></li>
+          <li><a href="#blog" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="#feedback" data-i18n="nav.feedback">Feedback</a></li>
+          <li><a href="https://v8-8-five.vercel.app/?_vercel_share=qUTGpgM3IKMcoi1sO5QOXf5kRTNlSPz8" target="_blank" rel="noopener" class="nav-cta" data-i18n="nav.demo">Ver Demo →</a></li>
+        </ul>
+        <!-- Language Switcher -->
+        <div class="lang-switcher" role="group" aria-label="Language / Idioma">
+          <button class="lang-btn active" id="btn-es" onclick="setLang('es')" aria-label="Cambiar a Español">ES</button>
+          <button class="lang-btn" id="btn-en" onclick="setLang('en')" aria-label="Switch to English">EN</button>
+        </div>
+      </div>
     </div>
   </nav>
 
-  <!-- ─── HERO ─── -->
-  <section id="hero" aria-label="Presentación principal">
+  <!-- HERO -->
+  <section id="hero" aria-label="Hero">
     <div class="hero-grid-bg" aria-hidden="true"></div>
     <div class="hero-glow" aria-hidden="true"></div>
     <div class="container">
       <div class="hero-content">
-
         <div class="badge">
           <span class="badge-dot"></span>
-          Inteligencia Artificial · Handball · Análisis Deportivo
+          <span data-i18n="hero.badge">Inteligencia Artificial · Handball · Análisis Deportivo</span>
         </div>
-
         <h1>
-          EL DATO<br>
-          <span class="line-accent">QUE CAMBIA</span><br>
-          <span class="line-orange">EL PARTIDO</span>
+          <span data-i18n="hero.line1">EL DATO</span><br>
+          <span class="line-accent" data-i18n="hero.line2">QUE CAMBIA</span><br>
+          <span class="line-orange" data-i18n="hero.line3">EL PARTIDO</span>
         </h1>
-
-        <p class="hero-sub">
+        <p class="hero-sub" data-i18n="hero.sub">
           Plataforma de análisis estadístico de handball basada en IA. Tomá decisiones tácticas antes, durante y después del juego — con datos reales, no intuiciones.
         </p>
-
         <div class="hero-ctas">
-          <a
-            href="https://v8-8-five.vercel.app/?_vercel_share=qUTGpgM3IKMcoi1sO5QOXf5kRTNlSPz8"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-primary"
-            aria-label="Ver demo de HandballPro IA"
-          >
-            🎯 Ver Demo en Vivo
-          </a>
-          <a href="#feedback" class="btn btn-secondary">
-            ✉ Enviar Feedback
-          </a>
+          <a href="https://v8-8-five.vercel.app/?_vercel_share=qUTGpgM3IKMcoi1sO5QOXf5kRTNlSPz8" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-i18n="hero.cta1">🎯 Ver Demo en Vivo</a>
+          <a href="#feedback" class="btn btn-secondary" data-i18n="hero.cta2">✉ Enviar Feedback</a>
         </div>
-
-        <div class="hero-stats" aria-label="Estadísticas clave del producto">
+        <div class="hero-stats">
           <div class="stat-item">
             <div class="stat-num">100%</div>
-            <div class="stat-label">Análisis automatizado</div>
+            <div class="stat-label" data-i18n="hero.stat1">Análisis automatizado</div>
           </div>
           <div class="stat-item">
             <div class="stat-num">RT</div>
-            <div class="stat-label">Datos en tiempo real</div>
+            <div class="stat-label" data-i18n="hero.stat2">Datos en tiempo real</div>
           </div>
           <div class="stat-item">
             <div class="stat-num">IA</div>
-            <div class="stat-label">Insights automáticos</div>
+            <div class="stat-label" data-i18n="hero.stat3">Insights automáticos</div>
           </div>
           <div class="stat-item">
             <div class="stat-num">360°</div>
-            <div class="stat-label">Análisis del partido</div>
+            <div class="stat-label" data-i18n="hero.stat4">Análisis del partido</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── QUÉ HACE LA IA ─── -->
-  <section id="que-hace" aria-labelledby="que-hace-title">
+  <!-- QUÉ HACE LA IA -->
+  <section id="que-hace">
     <div class="container">
-      <p class="section-eyebrow">Inteligencia Artificial Aplicada al Handball</p>
-      <h2 id="que-hace-title">¿Qué hace la IA?</h2>
-      <p class="section-lead">
-        No es un marcador digital. Es un sistema que lee el partido, detecta patrones y te entrega las conclusiones que tardarías horas en calcular manualmente.
-      </p>
-
+      <p class="section-eyebrow" data-i18n="ai.eyebrow">Inteligencia Artificial Aplicada al Handball</p>
+      <h2 data-i18n="ai.title">¿Qué hace la IA?</h2>
+      <p class="section-lead" data-i18n="ai.lead">No es un marcador digital. Es un sistema que lee el partido, detecta patrones y te entrega las conclusiones que tardarías horas en calcular manualmente.</p>
       <div class="ia-grid" data-reveal>
         <div class="ia-cell">
           <span class="ia-icon">📊</span>
-          <h3>Lee el partido</h3>
-          <p>Procesa cada evento registrado —goles, lanzamientos, asistencias, pérdidas— y construye un modelo estadístico completo del juego en tiempo real.</p>
+          <h3 data-i18n="ai.c1.title">Lee el partido</h3>
+          <p data-i18n="ai.c1.text">Procesa cada evento registrado —goles, lanzamientos, asistencias, pérdidas— y construye un modelo estadístico completo del juego en tiempo real.</p>
         </div>
         <div class="ia-cell">
           <span class="ia-icon">🧠</span>
-          <h3>Detecta patrones</h3>
-          <p>Identifica tendencias que el ojo humano pasa por alto: zonas de presión, momentos críticos del partido, eficiencia por tiempo de juego.</p>
+          <h3 data-i18n="ai.c2.title">Detecta patrones</h3>
+          <p data-i18n="ai.c2.text">Identifica tendencias que el ojo humano pasa por alto: zonas de presión, momentos críticos del partido, eficiencia por tiempo de juego.</p>
         </div>
         <div class="ia-cell">
           <span class="ia-icon">💡</span>
-          <h3>Genera insights</h3>
-          <p>No solo muestra números. Interpreta los datos y entrega conclusiones accionables: "el equipo rival pierde eficacia en los últimos 10 minutos del primer tiempo".</p>
+          <h3 data-i18n="ai.c3.title">Genera insights</h3>
+          <p data-i18n="ai.c3.text">No solo muestra números. Interpreta los datos y entrega conclusiones accionables: "el equipo rival pierde eficacia en los últimos 10 minutos del primer tiempo".</p>
         </div>
         <div class="ia-cell">
           <span class="ia-icon">🔮</span>
-          <h3>Anticipa comportamientos</h3>
-          <p>Analiza historial de partidos para anticipar cómo se comportará un equipo en distintas situaciones de juego — ideal para la preparación táctica previa.</p>
+          <h3 data-i18n="ai.c4.title">Anticipa comportamientos</h3>
+          <p data-i18n="ai.c4.text">Analiza historial de partidos para anticipar cómo se comportará un equipo en distintas situaciones de juego — ideal para la preparación táctica previa.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── FUNCIONALIDADES ─── -->
-  <section id="funcionalidades" aria-labelledby="funcionalidades-title">
+  <!-- FUNCIONALIDADES -->
+  <section id="funcionalidades">
     <div class="container">
-      <p class="section-eyebrow">Herramientas del sistema</p>
-      <h2 id="funcionalidades-title">Funcionalidades</h2>
-      <p class="section-lead">Cada módulo está diseñado para un aspecto específico del análisis deportivo en handball.</p>
-
+      <p class="section-eyebrow" data-i18n="feat.eyebrow">Herramientas del sistema</p>
+      <h2 data-i18n="feat.title">Funcionalidades</h2>
+      <p class="section-lead" data-i18n="feat.lead">Cada módulo está diseñado para un aspecto específico del análisis deportivo en handball.</p>
       <div class="features-list">
-
         <article class="feature-card" data-reveal>
-          <span class="feature-tag">Tiempo real</span>
-          <h3>📡 Análisis en Vivo</h3>
-          <p>Cargá eventos del partido mientras ocurren. Cada acción se registra y el sistema actualiza las métricas al instante, dándote una foto precisa del juego en cualquier momento.</p>
+          <span class="feature-tag" data-i18n="feat.f1.tag">Tiempo real</span>
+          <h3 data-i18n="feat.f1.title">📡 Análisis en Vivo</h3>
+          <p data-i18n="feat.f1.text">Cargá eventos del partido mientras ocurren. Cada acción se registra y el sistema actualiza las métricas al instante, dándote una foto precisa del juego en cualquier momento.</p>
         </article>
-
         <article class="feature-card" data-reveal>
-          <span class="feature-tag">Automático</span>
-          <h3>📈 Métricas Avanzadas</h3>
-          <p>Eficiencia de lanzamiento por zona, porcentaje de conversión por jugador, distribución de ataques por sector, pérdidas de balón y muchas más métricas que el software calcula solo.</p>
+          <span class="feature-tag" data-i18n="feat.f2.tag">Automático</span>
+          <h3 data-i18n="feat.f2.title">📈 Métricas Avanzadas</h3>
+          <p data-i18n="feat.f2.text">Eficiencia de lanzamiento por zona, porcentaje de conversión por jugador, distribución de ataques por sector, pérdidas de balón y muchas más métricas que el software calcula solo.</p>
         </article>
-
         <article class="feature-card" data-reveal>
-          <span class="feature-tag">Inteligencia</span>
-          <h3>💬 Insights Automáticos</h3>
-          <p>El sistema no solo muestra datos crudos. Genera conclusiones en lenguaje claro sobre lo que está pasando tácticamente, qué funciona y qué no en el partido.</p>
+          <span class="feature-tag" data-i18n="feat.f3.tag">Inteligencia</span>
+          <h3 data-i18n="feat.f3.title">💬 Insights Automáticos</h3>
+          <p data-i18n="feat.f3.text">El sistema no solo muestra datos crudos. Genera conclusiones en lenguaje claro sobre lo que está pasando tácticamente, qué funciona y qué no en el partido.</p>
         </article>
-
         <article class="feature-card" data-reveal>
-          <span class="feature-tag">Visual</span>
-          <h3>🔥 Heatmaps de Juego</h3>
-          <p>Visualizá en un mapa de calor dónde se concentran los lanzamientos, las pérdidas y las acciones ofensivas de cada equipo. Comprendé el partido de un vistazo.</p>
+          <span class="feature-tag" data-i18n="feat.f4.tag">Visual</span>
+          <h3 data-i18n="feat.f4.title">🔥 Heatmaps de Juego</h3>
+          <p data-i18n="feat.f4.text">Visualizá en un mapa de calor dónde se concentran los lanzamientos, las pérdidas y las acciones ofensivas de cada equipo. Comprendé el partido de un vistazo.</p>
         </article>
-
         <article class="feature-card" data-reveal>
-          <span class="feature-tag">Temporal</span>
-          <h3>⏱ Evolución del Partido</h3>
-          <p>Seguí cómo cambia el rendimiento de los equipos a lo largo del tiempo. Identificá los momentos donde el partido se inclinó y por qué.</p>
+          <span class="feature-tag" data-i18n="feat.f5.tag">Temporal</span>
+          <h3 data-i18n="feat.f5.title">⏱ Evolución del Partido</h3>
+          <p data-i18n="feat.f5.text">Seguí cómo cambia el rendimiento de los equipos a lo largo del tiempo. Identificá los momentos donde el partido se inclinó y por qué.</p>
         </article>
-
         <article class="feature-card" data-reveal>
-          <span class="feature-tag">Comparativo</span>
-          <h3>⚖️ Eventos vs Resultado</h3>
-          <p>Compará los eventos registrados contra el resultado final para entender si el marcador refleja el rendimiento real — o si hubo un equipo que mereció más.</p>
+          <span class="feature-tag" data-i18n="feat.f6.tag">Comparativo</span>
+          <h3 data-i18n="feat.f6.title">⚖️ Eventos vs Resultado</h3>
+          <p data-i18n="feat.f6.text">Compará los eventos registrados contra el resultado final para entender si el marcador refleja el rendimiento real — o si hubo un equipo que mereció más.</p>
         </article>
-
       </div>
     </div>
   </section>
 
-  <!-- ─── SCOUTING / ANÁLISIS FUTURO ─── -->
-  <section id="scouting" aria-labelledby="scouting-title">
+  <!-- SCOUTING -->
+  <section id="scouting">
     <div class="container">
       <div class="scouting-layout">
-
         <div class="scouting-visual" aria-hidden="true">
           <div class="court-diagram">
             <div class="court-inner">
               <div class="court-zone zone-hot"></div>
               <div class="court-zone zone-cold"></div>
-              <!-- dots -->
               <span class="zone-dot" style="width:10px;height:10px;background:#ff6b35;opacity:0.8;top:45%;left:20%;"></span>
               <span class="zone-dot" style="width:8px;height:8px;background:#ff6b35;opacity:0.6;top:35%;left:25%;"></span>
               <span class="zone-dot" style="width:6px;height:6px;background:#ff6b35;opacity:0.5;top:60%;left:18%;"></span>
@@ -1129,353 +479,525 @@
           <div class="scouting-pills">
             <div class="scouting-pill">
               <span class="pill-icon">🛡️</span>
-              <div class="pill-text">
-                <div class="pill-title">Lado derecho: zona débil detectada</div>
-                <div class="pill-desc">38% de efectividad en lanzamientos al segundo palo</div>
+              <div>
+                <div class="pill-title" data-i18n="scout.pill1.title">Lado derecho: zona débil detectada</div>
+                <div class="pill-desc" data-i18n="scout.pill1.desc">38% de efectividad en lanzamientos al segundo palo</div>
               </div>
             </div>
             <div class="scouting-pill">
               <span class="pill-icon">🥅</span>
-              <div class="pill-text">
-                <div class="pill-title">Arquero: cobertura alta deficiente</div>
-                <div class="pill-desc">Lanzamientos altos al ángulo: 71% de conversión en contra</div>
+              <div>
+                <div class="pill-title" data-i18n="scout.pill2.title">Arquero: cobertura alta deficiente</div>
+                <div class="pill-desc" data-i18n="scout.pill2.desc">Lanzamientos altos al ángulo: 71% de conversión en contra</div>
               </div>
             </div>
             <div class="scouting-pill">
               <span class="pill-icon">⚡</span>
-              <div class="pill-text">
-                <div class="pill-title">Momento crítico: min 25–35</div>
-                <div class="pill-desc">El rival concentra el 40% de sus ataques en este período</div>
+              <div>
+                <div class="pill-title" data-i18n="scout.pill3.title">Momento crítico: min 25–35</div>
+                <div class="pill-desc" data-i18n="scout.pill3.desc">El rival concentra el 40% de sus ataques en este período</div>
               </div>
             </div>
           </div>
         </div>
-
         <div class="scouting-copy">
-          <p class="section-eyebrow">Scouting y preparación táctica</p>
-          <h2 id="scouting-title">Preparate para el partido antes de jugarlo</h2>
-          <p style="color:var(--muted);font-size:1rem;margin-bottom:0;">
-            Esta es la funcionalidad más poderosa de la plataforma. Usando el historial de partidos, la IA analiza al rival y te entrega un informe táctico antes de salir a la cancha.
-          </p>
-
+          <p class="section-eyebrow" data-i18n="scout.eyebrow">Scouting y preparación táctica</p>
+          <h2 data-i18n="scout.title">Preparate para el partido antes de jugarlo</h2>
+          <p style="color:var(--muted);font-size:1rem;margin-bottom:0;" data-i18n="scout.lead">Esta es la funcionalidad más poderosa de la plataforma. Usando el historial de partidos, la IA analiza al rival y te entrega un informe táctico antes de salir a la cancha.</p>
           <div class="scouting-features">
-            <div class="scout-item">
-              <span class="scout-num">01</span>
-              <div>
-                <h4>Eficiencia de Arqueros</h4>
-                <p>Detecta los sectores donde el arquero rival tiene mayor y menor cobertura. Sabés adónde tirar antes de lanzar.</p>
-              </div>
-            </div>
-            <div class="scout-item">
-              <span class="scout-num">02</span>
-              <div>
-                <h4>Lados Débiles y Fuertes</h4>
-                <p>Identifica qué sectores del campo adversario son más permeables al ataque con datos estadísticos concretos.</p>
-              </div>
-            </div>
-            <div class="scout-item">
-              <span class="scout-num">03</span>
-              <div>
-                <h4>Patrones de Juego Históricos</h4>
-                <p>Analiza cómo juega el equipo rival en distintas situaciones: bajo presión, en inferioridad numérica, en los últimos minutos.</p>
-              </div>
-            </div>
-            <div class="scout-item">
-              <span class="scout-num">04</span>
-              <div>
-                <h4>Preparación Táctica con Datos</h4>
-                <p>Lleva al equipo técnico un plan basado en evidencia real, no en suposiciones. Entrenás lo que realmente importa.</p>
-              </div>
-            </div>
+            <div class="scout-item"><span class="scout-num">01</span><div><h4 data-i18n="scout.s1.title">Eficiencia de Arqueros</h4><p data-i18n="scout.s1.text">Detecta los sectores donde el arquero rival tiene mayor y menor cobertura. Sabés adónde tirar antes de lanzar.</p></div></div>
+            <div class="scout-item"><span class="scout-num">02</span><div><h4 data-i18n="scout.s2.title">Lados Débiles y Fuertes</h4><p data-i18n="scout.s2.text">Identifica qué sectores del campo adversario son más permeables al ataque con datos estadísticos concretos.</p></div></div>
+            <div class="scout-item"><span class="scout-num">03</span><div><h4 data-i18n="scout.s3.title">Patrones de Juego Históricos</h4><p data-i18n="scout.s3.text">Analiza cómo juega el equipo rival en distintas situaciones: bajo presión, en inferioridad numérica, en los últimos minutos.</p></div></div>
+            <div class="scout-item"><span class="scout-num">04</span><div><h4 data-i18n="scout.s4.title">Preparación Táctica con Datos</h4><p data-i18n="scout.s4.text">Lleva al equipo técnico un plan basado en evidencia real, no en suposiciones. Entrenás lo que realmente importa.</p></div></div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ─── PARA QUIÉN ─── -->
-  <section id="para-quien" aria-labelledby="para-quien-title">
+  <!-- PARA QUIÉN -->
+  <section id="para-quien">
     <div class="container">
-      <p class="section-eyebrow">Usuarios de la plataforma</p>
-      <h2 id="para-quien-title">¿Para quién es HandballPro IA?</h2>
-      <p class="section-lead">Para todos los que toman decisiones en handball y quieren respaldarlas con datos reales.</p>
-
+      <p class="section-eyebrow" data-i18n="who.eyebrow">Usuarios de la plataforma</p>
+      <h2 data-i18n="who.title">¿Para quién es HandballPro IA?</h2>
+      <p class="section-lead" data-i18n="who.lead">Para todos los que toman decisiones en handball y quieren respaldarlas con datos reales.</p>
       <div class="audience-grid" data-reveal>
         <div class="audience-card">
           <span class="audience-emoji">🧢</span>
-          <h3>Entrenadores</h3>
-          <p>Tomá decisiones tácticas basadas en datos concretos, no en sensaciones. Antes, durante y después del partido.</p>
+          <h3 data-i18n="who.c1.title">Entrenadores</h3>
+          <p data-i18n="who.c1.text">Tomá decisiones tácticas basadas en datos concretos, no en sensaciones. Antes, durante y después del partido.</p>
           <ul class="audience-list">
-            <li>Análisis del rival en tiempo real</li>
-            <li>Insights automáticos por período</li>
-            <li>Preparación táctica con scouting IA</li>
-            <li>Evolución del rendimiento del equipo</li>
+            <li data-i18n="who.c1.li1">Análisis del rival en tiempo real</li>
+            <li data-i18n="who.c1.li2">Insights automáticos por período</li>
+            <li data-i18n="who.c1.li3">Preparación táctica con scouting IA</li>
+            <li data-i18n="who.c1.li4">Evolución del rendimiento del equipo</li>
           </ul>
         </div>
-
         <div class="audience-card">
           <span class="audience-emoji">💻</span>
-          <h3>Analistas</h3>
-          <p>Dejá de cargar planillas. La plataforma hace el análisis pesado; vos lo interpretás y comunicás.</p>
+          <h3 data-i18n="who.c2.title">Analistas</h3>
+          <p data-i18n="who.c2.text">Dejá de cargar planillas. La plataforma hace el análisis pesado; vos lo interpretás y comunicás.</p>
           <ul class="audience-list">
-            <li>Métricas automáticas al instante</li>
-            <li>Heatmaps exportables</li>
-            <li>Comparación de eventos vs resultado</li>
-            <li>Datos históricos por partido</li>
+            <li data-i18n="who.c2.li1">Métricas automáticas al instante</li>
+            <li data-i18n="who.c2.li2">Heatmaps exportables</li>
+            <li data-i18n="who.c2.li3">Comparación de eventos vs resultado</li>
+            <li data-i18n="who.c2.li4">Datos históricos por partido</li>
           </ul>
         </div>
-
         <div class="audience-card">
           <span class="audience-emoji">🏆</span>
-          <h3>Equipos y Clubes</h3>
-          <p>Profesionalizá el cuerpo técnico con herramientas de análisis que antes solo tenían los equipos de élite.</p>
+          <h3 data-i18n="who.c3.title">Equipos y Clubes</h3>
+          <p data-i18n="who.c3.text">Profesionalizá el cuerpo técnico con herramientas de análisis que antes solo tenían los equipos de élite.</p>
           <ul class="audience-list">
-            <li>Historial de partidos del equipo</li>
-            <li>Seguimiento de jugadores</li>
-            <li>Análisis de arqueros propios</li>
-            <li>Ventaja competitiva real</li>
+            <li data-i18n="who.c3.li1">Historial de partidos del equipo</li>
+            <li data-i18n="who.c3.li2">Seguimiento de jugadores</li>
+            <li data-i18n="who.c3.li3">Análisis de arqueros propios</li>
+            <li data-i18n="who.c3.li4">Ventaja competitiva real</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── DEMO CTA ─── -->
-  <section id="demo-cta" aria-label="Llamada a la acción - Demo">
+  <!-- DEMO CTA -->
+  <section id="demo-cta">
     <div class="container">
       <div class="demo-inner" data-reveal>
         <div class="live-ring" style="margin-bottom:24px;">
           <span class="live-dot"></span>
-          Demo disponible ahora
+          <span data-i18n="demo.live">Demo disponible ahora</span>
         </div>
-        <h2>Miralo en acción,<br>no solo en palabras</h2>
-        <p>La plataforma ya está funcionando. Accedé a la demo y explorá el análisis estadístico de handball en tiempo real con datos reales de partidos.</p>
-        <a
-          href="https://v8-8-five.vercel.app/?_vercel_share=qUTGpgM3IKMcoi1sO5QOXf5kRTNlSPz8"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn btn-primary"
-          style="font-size:1.1rem;padding:18px 44px;"
-          aria-label="Abrir la demo de HandballPro IA en nueva pestaña"
-        >
-          🚀 Abrir Demo Completa
-        </a>
-        <p style="margin-top:16px;font-size:0.82rem;color:var(--muted);">Acceso gratuito · Sin registro · Sin límites</p>
+        <h2 data-i18n="demo.title">Miralo en acción,<br>no solo en palabras</h2>
+        <p data-i18n="demo.text">La plataforma ya está funcionando. Accedé a la demo y explorá el análisis estadístico de handball en tiempo real con datos reales de partidos.</p>
+        <a href="https://v8-8-five.vercel.app/?_vercel_share=qUTGpgM3IKMcoi1sO5QOXf5kRTNlSPz8" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="font-size:1.1rem;padding:18px 44px;" data-i18n="demo.btn">🚀 Abrir Demo Completa</a>
+        <p style="margin-top:16px;font-size:0.82rem;color:var(--muted);" data-i18n="demo.hint">Acceso gratuito · Sin registro · Sin límites</p>
       </div>
     </div>
   </section>
 
-  <!-- ─── ROADMAP ─── -->
-  <section id="roadmap" aria-labelledby="roadmap-title">
+  <!-- ROADMAP -->
+  <section id="roadmap">
     <div class="container">
-      <p class="section-eyebrow">Desarrollo del producto</p>
-      <h2 id="roadmap-title">Roadmap</h2>
-      <p class="section-lead">El proyecto está en crecimiento constante. Cada fase agrega más poder analítico a la plataforma.</p>
-
+      <p class="section-eyebrow" data-i18n="road.eyebrow">Desarrollo del producto</p>
+      <h2 data-i18n="road.title">Roadmap</h2>
+      <p class="section-lead" data-i18n="road.lead">El proyecto está en crecimiento constante. Cada fase agrega más poder analítico a la plataforma.</p>
       <div class="roadmap-track" data-reveal>
-
         <div class="roadmap-item">
           <div class="roadmap-node active">✅</div>
           <div class="roadmap-body">
-            <div class="roadmap-badge-active"><span class="live-dot"></span>En producción</div>
-            <div class="roadmap-phase">Fase 1 — Actual</div>
-            <h3>Sistema Core Funcionando</h3>
-            <p>Registro de eventos en tiempo real, estadísticas automáticas, insights por IA, heatmaps, evolución del partido y análisis de arqueros. Todo esto ya está disponible en la demo.</p>
+            <div class="roadmap-badge-active"><span class="live-dot"></span><span data-i18n="road.badge">En producción</span></div>
+            <div class="roadmap-phase" data-i18n="road.p1.phase">Fase 1 — Actual</div>
+            <h3 data-i18n="road.p1.title">Sistema Core Funcionando</h3>
+            <p data-i18n="road.p1.text">Registro de eventos en tiempo real, estadísticas automáticas, insights por IA, heatmaps, evolución del partido y análisis de arqueros. Todo esto ya está disponible en la demo.</p>
           </div>
         </div>
-
         <div class="roadmap-item">
           <div class="roadmap-node">🔧</div>
           <div class="roadmap-body">
-            <div class="roadmap-phase">Fase 2 — En progreso</div>
-            <h3>Mejoras en Insights</h3>
-            <p>Refinamiento de los algoritmos de análisis. Insights más precisos, mayor contexto táctico y mejoras en la interfaz de registro de eventos.</p>
+            <div class="roadmap-phase" data-i18n="road.p2.phase">Fase 2 — En progreso</div>
+            <h3 data-i18n="road.p2.title">Mejoras en Insights</h3>
+            <p data-i18n="road.p2.text">Refinamiento de los algoritmos de análisis. Insights más precisos, mayor contexto táctico y mejoras en la interfaz de registro de eventos.</p>
           </div>
         </div>
-
         <div class="roadmap-item">
           <div class="roadmap-node">📚</div>
           <div class="roadmap-body">
-            <div class="roadmap-phase">Fase 3 — Planificada</div>
-            <h3>Historial de Equipos</h3>
-            <p>Base de datos persistente por equipo. Comparaciones entre temporadas, seguimiento de jugadores y análisis de tendencias a largo plazo.</p>
+            <div class="roadmap-phase" data-i18n="road.p3.phase">Fase 3 — Planificada</div>
+            <h3 data-i18n="road.p3.title">Historial de Equipos</h3>
+            <p data-i18n="road.p3.text">Base de datos persistente por equipo. Comparaciones entre temporadas, seguimiento de jugadores y análisis de tendencias a largo plazo.</p>
           </div>
         </div>
-
         <div class="roadmap-item" style="padding-bottom:0">
           <div class="roadmap-node">🤖</div>
           <div class="roadmap-body">
-            <div class="roadmap-phase">Fase 4 — Visión</div>
-            <h3>IA Predictiva Avanzada</h3>
-            <p>Modelos predictivos que anticipan el resultado basándose en patrones históricos. Recomendaciones tácticas generadas por IA antes del partido.</p>
+            <div class="roadmap-phase" data-i18n="road.p4.phase">Fase 4 — Visión</div>
+            <h3 data-i18n="road.p4.title">IA Predictiva Avanzada</h3>
+            <p data-i18n="road.p4.text">Modelos predictivos que anticipan el resultado basándose en patrones históricos. Recomendaciones tácticas generadas por IA antes del partido.</p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <!-- ─── DONACIONES ─── -->
-  <section id="donaciones" aria-labelledby="donaciones-title">
+  <!-- DONACIONES -->
+  <section id="donaciones">
     <div class="container">
-      <p class="section-eyebrow">Proyecto independiente</p>
-      <h2 id="donaciones-title">Apoyá el desarrollo</h2>
-      <p class="section-lead">HandballPro IA es un proyecto independiente construido con pasión por el handball y los datos. Cada donación ayuda a escalar la infraestructura.</p>
-
+      <p class="section-eyebrow" data-i18n="don.eyebrow">Proyecto independiente</p>
+      <h2 data-i18n="don.title">Apoyá el desarrollo</h2>
+      <p class="section-lead" data-i18n="don.lead">HandballPro IA es un proyecto independiente construido con pasión por el handball y los datos. Cada donación ayuda a escalar la infraestructura.</p>
       <div class="donation-card" data-reveal>
-        <h3 style="font-family:var(--display);font-size:1.8rem;letter-spacing:0.03em;margin-bottom:16px;">💛 Ayudanos a crecer</h3>
-        <p style="color:var(--muted);max-width:540px;line-height:1.7;">
-          Este proyecto nació del amor al handball y la necesidad de análisis deportivo real y accesible. Los servidores, la base de datos y el tiempo de desarrollo tienen un costo. Tu apoyo —por pequeño que sea— hace que esto siga adelante.
-        </p>
-        <p style="color:var(--muted);margin-top:14px;font-size:0.95rem;">Podés donar fácilmente desde Argentina con Mercado Pago al alias:</p>
-
-        <div
-          class="donation-alias"
-          role="button"
-          tabindex="0"
-          aria-label="Alias Mercado Pago: arana.cai — hacer clic para copiar"
-          onclick="copyAlias()"
-          onkeypress="if(event.key==='Enter')copyAlias()"
-          title="Clic para copiar"
-        >
-          arana.cai
-        </div>
-        <p class="donation-copy-hint">↑ Clic para copiar el alias</p>
-
+        <h3 style="font-family:var(--display);font-size:1.8rem;letter-spacing:0.03em;margin-bottom:16px;" data-i18n="don.card.title">💛 Ayudanos a crecer</h3>
+        <p style="color:var(--muted);max-width:540px;line-height:1.7;" data-i18n="don.card.text">Este proyecto nació del amor al handball y la necesidad de análisis deportivo real y accesible. Los servidores, la base de datos y el tiempo de desarrollo tienen un costo. Tu apoyo —por pequeño que sea— hace que esto siga adelante.</p>
+        <p style="color:var(--muted);margin-top:14px;font-size:0.95rem;" data-i18n="don.card.method">Podés donar fácilmente desde Argentina con Mercado Pago al alias:</p>
+        <div class="donation-alias" role="button" tabindex="0" onclick="copyAlias()" onkeypress="if(event.key==='Enter')copyAlias()" title="Click to copy">arana.cai</div>
+        <p class="donation-copy-hint" data-i18n="don.card.hint">↑ Clic para copiar el alias</p>
         <div style="margin-top:32px;padding-top:28px;border-top:1px solid var(--border);">
-          <p style="font-size:0.9rem;color:var(--muted);">
-            Con tu ayuda podemos: mejorar la infraestructura de base de datos · agregar más funcionalidades · mantener la demo gratuita · y seguir construyendo la mejor herramienta de <strong style="color:var(--text)">análisis de handball</strong> de habla hispana.
-          </p>
+          <p style="font-size:0.9rem;color:var(--muted);" data-i18n="don.card.footer">Con tu ayuda podemos: mejorar la infraestructura · agregar más funcionalidades · mantener la demo gratuita · y seguir construyendo la mejor herramienta de <strong style="color:var(--text)">análisis de handball</strong>.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── FEEDBACK ─── -->
-  <section id="feedback" aria-labelledby="feedback-title">
+  <!-- FEEDBACK -->
+  <section id="feedback">
     <div class="container">
-      <p class="section-eyebrow">Comunidad y mejora continua</p>
-      <h2 id="feedback-title">Tu opinión construye la plataforma</h2>
-      <p class="section-lead">El producto mejora con el uso real. Si encontrás errores, tenés sugerencias o querés pedir una funcionalidad, escribinos.</p>
-
+      <p class="section-eyebrow" data-i18n="fb.eyebrow">Comunidad y mejora continua</p>
+      <h2 data-i18n="fb.title">Tu opinión construye la plataforma</h2>
+      <p class="section-lead" data-i18n="fb.lead">El producto mejora con el uso real. Si encontrás errores, tenés sugerencias o querés pedir una funcionalidad, escribinos.</p>
       <div class="feedback-card" data-reveal>
-        <h3 style="font-family:var(--display);font-size:1.8rem;letter-spacing:0.03em;margin-bottom:12px;">💬 Mandanos tu feedback</h3>
-        <p style="color:var(--muted);max-width:500px;">
-          ¿La plataforma te parece útil? ¿Encontraste algo que no funciona? ¿Falta alguna funcionalidad clave para tu trabajo? Queremos saberlo.
-        </p>
-
-        <a href="mailto:marianonicolaslosada@gmail.com?subject=Feedback HandballPro IA" class="email-link" aria-label="Enviar email de feedback a HandballPro IA">
-          ✉ marianonicolaslosada@gmail.com
-        </a>
-
+        <h3 style="font-family:var(--display);font-size:1.8rem;letter-spacing:0.03em;margin-bottom:12px;" data-i18n="fb.card.title">💬 Mandanos tu feedback</h3>
+        <p style="color:var(--muted);max-width:500px;" data-i18n="fb.card.text">¿La plataforma te parece útil? ¿Encontraste algo que no funciona? ¿Falta alguna funcionalidad clave para tu trabajo? Queremos saberlo.</p>
+        <a href="mailto:marianonicolaslosada@gmail.com?subject=Feedback HandballPro IA" class="email-link">✉ marianonicolaslosada@gmail.com</a>
         <div style="display:flex;flex-direction:column;gap:12px;">
-          <a href="mailto:marianonicolaslosada@gmail.com?subject=Bug Report HandballPro IA&body=Descripción del error:" class="btn btn-secondary" style="display:inline-flex;max-width:max-content;">
-            🐛 Reportar un error
-          </a>
-          <a href="mailto:marianonicolaslosada@gmail.com?subject=Sugerencia HandballPro IA&body=Mi sugerencia:" class="btn btn-secondary" style="display:inline-flex;max-width:max-content;">
-            ✨ Sugerir una mejora
-          </a>
-          <a href="mailto:marianonicolaslosada@gmail.com?subject=Quiero colaborar con HandballPro IA" class="btn btn-secondary" style="display:inline-flex;max-width:max-content;">
-            🤝 Quiero colaborar
-          </a>
+          <a href="mailto:marianonicolaslosada@gmail.com?subject=Bug Report HandballPro IA" class="btn btn-secondary" style="display:inline-flex;max-width:max-content;" data-i18n="fb.btn1">🐛 Reportar un error</a>
+          <a href="mailto:marianonicolaslosada@gmail.com?subject=Sugerencia HandballPro IA" class="btn btn-secondary" style="display:inline-flex;max-width:max-content;" data-i18n="fb.btn2">✨ Sugerir una mejora</a>
+          <a href="mailto:marianonicolaslosada@gmail.com?subject=Quiero colaborar con HandballPro IA" class="btn btn-secondary" style="display:inline-flex;max-width:max-content;" data-i18n="fb.btn3">🤝 Quiero colaborar</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ─── FOOTER ─── -->
-  <footer aria-label="Pie de página">
+  <!-- BLOG -->
+  <section id="blog">
     <div class="container">
-      <div class="footer-inner" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:20px;">
-        <div>
-          <a href="#hero" class="logo" style="font-size:1.4rem;">HANDBALL<span>PRO</span> IA</a>
-          <p class="footer-note" style="margin-top:8px;">Análisis estadístico de handball · Software deportivo con IA</p>
+      <p class="section-eyebrow" data-i18n="blog.eyebrow">Conocimiento Aplicado</p>
+      <h2 data-i18n="blog.title">Del Blog</h2>
+      <p class="section-lead" data-i18n="blog.lead">Guías prácticas sobre análisis de handball, estadísticas avanzadas y scouting táctico. Todo lo que necesitás saber para trabajar con datos reales.</p>
+      <div class="blog-grid" data-reveal>
+        <a href="/blog/como-analizar-partido-handball/" class="blog-card">
+          <span class="blog-tag" data-i18n="blog.c1.tag">Análisis</span>
+          <h3 data-i18n="blog.c1.title">Cómo Analizar un Partido de Handball con Datos</h3>
+          <p data-i18n="blog.c1.text">Guía paso a paso para registrar eventos, calcular métricas clave e interpretar heatmaps. Todo lo que necesitás para pasar de intuición a datos concretos.</p>
+          <div class="blog-card-footer">
+            <span data-i18n="blog.c1.time">⏱ 6 min de lectura</span>
+            <span class="read-more" data-i18n="blog.read">Leer artículo →</span>
+          </div>
+        </a>
+        <a href="/blog/estadisticas-handball-avanzadas/" class="blog-card">
+          <span class="blog-tag" data-i18n="blog.c2.tag">Estadísticas</span>
+          <h3 data-i18n="blog.c2.title">Estadísticas de Handball: Cuáles Importan Realmente</h3>
+          <p data-i18n="blog.c2.text">No todas las estadísticas dicen lo mismo. Descubrí cuáles métricas tienen mayor impacto en el resultado y cuáles son ruido que distrae al analista.</p>
+          <div class="blog-card-footer">
+            <span data-i18n="blog.c2.time">⏱ 5 min de lectura</span>
+            <span class="read-more" data-i18n="blog.read">Leer artículo →</span>
+          </div>
+        </a>
+        <a href="/blog/scouting-handball-analisis-rival/" class="blog-card">
+          <span class="blog-tag" data-i18n="blog.c3.tag">Scouting</span>
+          <h3 data-i18n="blog.c3.title">Scouting en Handball: Analizá a tu Rival Antes del Partido</h3>
+          <p data-i18n="blog.c3.text">Cómo preparar un análisis de rival completo: qué datos recopilar, cómo interpretar los patrones ofensivos y cómo traducir eso en un plan táctico.</p>
+          <div class="blog-card-footer">
+            <span data-i18n="blog.c3.time">⏱ 7 min de lectura</span>
+            <span class="read-more" data-i18n="blog.read">Leer artículo →</span>
+          </div>
+        </a>
+      </div>
+      <div class="blog-cta-row">
+        <a href="/blog/" class="btn btn-secondary" data-i18n="blog.cta">Ver todos los artículos →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="/" class="logo" style="font-size:1.5rem;display:block;margin-bottom:12px;">HANDBALL<span>PRO</span></a>
+          <p style="font-size:0.88rem;color:var(--muted);line-height:1.7;max-width:260px;" data-i18n="footer.brand">Plataforma de <strong style="color:var(--text);">análisis estadístico de handball</strong> con inteligencia artificial. Tomá decisiones tácticas basadas en datos reales.</p>
+          <div style="margin-top:20px;">
+            <a href="https://v8-8-five.vercel.app/?_vercel_share=qUTGpgM3IKMcoi1sO5QOXf5kRTNlSPz8" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding:10px 22px;font-size:0.85rem;" data-i18n="footer.demo">Ver Demo →</a>
+          </div>
         </div>
-        <div style="display:flex;gap:24px;flex-wrap:wrap;">
-          <a href="#que-hace" class="footer-note" style="text-decoration:none;">La IA</a>
-          <a href="#funcionalidades" class="footer-note" style="text-decoration:none;">Funciones</a>
-          <a href="#scouting" class="footer-note" style="text-decoration:none;">Scouting</a>
-          <a href="#roadmap" class="footer-note" style="text-decoration:none;">Roadmap</a>
-          <a href="#donaciones" class="footer-note" style="text-decoration:none;">Donaciones</a>
-          <a href="#feedback" class="footer-note" style="text-decoration:none;">Feedback</a>
+        <div class="footer-col">
+          <h5 data-i18n="footer.nav.title">Navegación</h5>
+          <ul>
+            <li><a href="#que-hace" data-i18n="footer.nav.ai">La Inteligencia Artificial</a></li>
+            <li><a href="#funcionalidades" data-i18n="footer.nav.features">Funcionalidades</a></li>
+            <li><a href="#scouting" data-i18n="footer.nav.scouting">Scouting Táctico</a></li>
+            <li><a href="#roadmap">Roadmap</a></li>
+            <li><a href="#donaciones" data-i18n="footer.nav.support">Apoyá el proyecto</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+          </ul>
         </div>
-        <div>
-          <a
-            href="https://v8-8-five.vercel.app/?_vercel_share=qUTGpgM3IKMcoi1sO5QOXf5kRTNlSPz8"
-            target="_blank"
-            rel="noopener"
-            class="btn btn-primary"
-            style="padding:10px 24px;font-size:0.9rem;"
-          >
-            Demo →
+        <div class="footer-col">
+          <h5 data-i18n="footer.blog.title">Blog</h5>
+          <ul>
+            <li><a href="/blog/" data-i18n="footer.blog.all">Todos los artículos</a></li>
+            <li><a href="/blog/como-analizar-partido-handball/" data-i18n="footer.blog.b1">Cómo analizar handball</a></li>
+            <li><a href="/blog/estadisticas-handball-avanzadas/" data-i18n="footer.blog.b2">Estadísticas avanzadas</a></li>
+            <li><a href="/blog/scouting-handball-analisis-rival/" data-i18n="footer.blog.b3">Scouting del rival</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5 data-i18n="footer.contact.title">Contacto</h5>
+          <ul>
+            <li><a href="mailto:marianonicolaslosada@gmail.com">marianonicolaslosada@gmail.com</a></li>
+            <li><a href="https://github.com/marianodip12" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          </ul>
+          <div style="margin-top:20px;">
+            <p style="font-size:0.78rem;color:var(--muted);margin-bottom:8px;" data-i18n="footer.alias">Alias MercadoPago:</p>
+            <button onclick="copyAlias()" style="background:rgba(0,212,255,0.08);border:1px solid rgba(0,212,255,0.2);color:var(--accent);padding:6px 14px;border-radius:4px;font-size:0.82rem;font-weight:700;cursor:pointer;letter-spacing:0.06em;">arana.cai ⎘</button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-note" data-i18n="footer.copy">© 2025–2026 HandballPro IA · Proyecto independiente en desarrollo activo · <a href="mailto:marianonicolaslosada@gmail.com" style="color:var(--accent);text-decoration:none;">marianonicolaslosada@gmail.com</a></p>
+        <div class="footer-dev">
+          <span data-i18n="footer.devby">Desarrollado por</span>
+          <a href="mailto:marianonicolaslosada@gmail.com">
+            <span class="footer-dev-logo">HANDBALL<span>PRO</span></span>
+            &nbsp;· <strong>Mariano Losada</strong>
           </a>
         </div>
       </div>
-      <div style="border-top:1px solid var(--border);margin-top:40px;padding-top:28px;text-align:center;">
-        <p class="footer-note">
-          © 2025 HandballPro IA · Proyecto independiente en desarrollo activo ·
-          <a href="mailto:marianonicolaslosada@gmail.com" style="color:var(--accent);text-decoration:none;">marianonicolaslosada@gmail.com</a>
-          · Alias MercadoPago: <strong>arana.cai</strong>
-        </p>
-        <p class="footer-note" style="margin-top:8px;">
-          Palabras clave: análisis handball · estadísticas handball · scouting handball · análisis deportivo · software handball · inteligencia artificial handball
-        </p>
-      </div>
+      <p class="footer-seo-keywords" aria-hidden="true">
+        handball statistics · handball analysis · handball scouting · análisis handball · estadísticas handball · handball heatmap · AI handball · handball data · análisis deportivo
+      </p>
     </div>
   </footer>
 
   <!-- Toast -->
-  <div class="toast" id="toast" role="status" aria-live="polite">✓ Alias copiado</div>
+  <div class="toast" id="toast" role="status" aria-live="polite">✓ Copiado</div>
 
   <script>
-    // ─── SCROLL REVEAL ───
-    const reveals = document.querySelectorAll('[data-reveal]');
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(e => {
-          if (e.isIntersecting) {
-            e.target.classList.add('revealed');
-            observer.unobserve(e.target);
-          }
-        });
-      },
-      { threshold: 0.12 }
-    );
-    reveals.forEach(el => observer.observe(el));
-
-    // ─── STAGGERED CHILDREN ───
-    document.querySelectorAll('.features-list .feature-card').forEach((el, i) => {
-      el.style.transitionDelay = `${i * 80}ms`;
-    });
-
-    // ─── COPY ALIAS ───
-    function copyAlias() {
-      navigator.clipboard.writeText('arana.cai').then(() => {
-        const toast = document.getElementById('toast');
-        toast.classList.add('show');
-        setTimeout(() => toast.classList.remove('show'), 2500);
-      });
+  // ─── TRANSLATIONS ───
+  const T = {
+    es: {
+      "meta.title": "HandballPro IA – Análisis Estadístico de Handball con Inteligencia Artificial",
+      "meta.desc": "Plataforma de análisis estadístico de handball basada en inteligencia artificial. Estadísticas en vivo, heatmaps, scouting, análisis de arqueros y preparación táctica para futuros partidos.",
+      "meta.kw": "análisis handball, estadísticas handball, scouting handball, análisis deportivo, software handball, inteligencia artificial handball, heatmap handball",
+      "og.title": "HandballPro IA – Análisis de Handball con Inteligencia Artificial",
+      "og.desc": "Tomá decisiones tácticas basadas en datos. Análisis en vivo, insights automáticos, heatmaps y scouting para futuros partidos.",
+      "banner": "⚡ Proyecto en desarrollo activo — Algunas funciones están siendo mejoradas continuamente",
+      "nav.ai":"La IA","nav.features":"Funciones","nav.scouting":"Scouting","nav.roadmap":"Roadmap","nav.blog":"Blog","nav.feedback":"Feedback","nav.demo":"Ver Demo →",
+      "hero.badge":"Inteligencia Artificial · Handball · Análisis Deportivo",
+      "hero.line1":"EL DATO","hero.line2":"QUE CAMBIA","hero.line3":"EL PARTIDO",
+      "hero.sub":"Plataforma de análisis estadístico de handball basada en IA. Tomá decisiones tácticas antes, durante y después del juego — con datos reales, no intuiciones.",
+      "hero.cta1":"🎯 Ver Demo en Vivo","hero.cta2":"✉ Enviar Feedback",
+      "hero.stat1":"Análisis automatizado","hero.stat2":"Datos en tiempo real","hero.stat3":"Insights automáticos","hero.stat4":"Análisis del partido",
+      "ai.eyebrow":"Inteligencia Artificial Aplicada al Handball","ai.title":"¿Qué hace la IA?",
+      "ai.lead":"No es un marcador digital. Es un sistema que lee el partido, detecta patrones y te entrega las conclusiones que tardarías horas en calcular manualmente.",
+      "ai.c1.title":"Lee el partido","ai.c1.text":"Procesa cada evento registrado —goles, lanzamientos, asistencias, pérdidas— y construye un modelo estadístico completo del juego en tiempo real.",
+      "ai.c2.title":"Detecta patrones","ai.c2.text":"Identifica tendencias que el ojo humano pasa por alto: zonas de presión, momentos críticos del partido, eficiencia por tiempo de juego.",
+      "ai.c3.title":"Genera insights","ai.c3.text":"No solo muestra números. Interpreta los datos y entrega conclusiones accionables: \"el equipo rival pierde eficacia en los últimos 10 minutos del primer tiempo\".",
+      "ai.c4.title":"Anticipa comportamientos","ai.c4.text":"Analiza historial de partidos para anticipar cómo se comportará un equipo en distintas situaciones de juego — ideal para la preparación táctica previa.",
+      "feat.eyebrow":"Herramientas del sistema","feat.title":"Funcionalidades",
+      "feat.lead":"Cada módulo está diseñado para un aspecto específico del análisis deportivo en handball.",
+      "feat.f1.tag":"Tiempo real","feat.f1.title":"📡 Análisis en Vivo","feat.f1.text":"Cargá eventos del partido mientras ocurren. Cada acción se registra y el sistema actualiza las métricas al instante, dándote una foto precisa del juego en cualquier momento.",
+      "feat.f2.tag":"Automático","feat.f2.title":"📈 Métricas Avanzadas","feat.f2.text":"Eficiencia de lanzamiento por zona, porcentaje de conversión por jugador, distribución de ataques por sector, pérdidas de balón y muchas más métricas que el software calcula solo.",
+      "feat.f3.tag":"Inteligencia","feat.f3.title":"💬 Insights Automáticos","feat.f3.text":"El sistema no solo muestra datos crudos. Genera conclusiones en lenguaje claro sobre lo que está pasando tácticamente, qué funciona y qué no en el partido.",
+      "feat.f4.tag":"Visual","feat.f4.title":"🔥 Heatmaps de Juego","feat.f4.text":"Visualizá en un mapa de calor dónde se concentran los lanzamientos, las pérdidas y las acciones ofensivas de cada equipo. Comprendé el partido de un vistazo.",
+      "feat.f5.tag":"Temporal","feat.f5.title":"⏱ Evolución del Partido","feat.f5.text":"Seguí cómo cambia el rendimiento de los equipos a lo largo del tiempo. Identificá los momentos donde el partido se inclinó y por qué.",
+      "feat.f6.tag":"Comparativo","feat.f6.title":"⚖️ Eventos vs Resultado","feat.f6.text":"Compará los eventos registrados contra el resultado final para entender si el marcador refleja el rendimiento real — o si hubo un equipo que mereció más.",
+      "scout.eyebrow":"Scouting y preparación táctica","scout.title":"Preparate para el partido antes de jugarlo",
+      "scout.lead":"Esta es la funcionalidad más poderosa de la plataforma. Usando el historial de partidos, la IA analiza al rival y te entrega un informe táctico antes de salir a la cancha.",
+      "scout.pill1.title":"Lado derecho: zona débil detectada","scout.pill1.desc":"38% de efectividad en lanzamientos al segundo palo",
+      "scout.pill2.title":"Arquero: cobertura alta deficiente","scout.pill2.desc":"Lanzamientos altos al ángulo: 71% de conversión en contra",
+      "scout.pill3.title":"Momento crítico: min 25–35","scout.pill3.desc":"El rival concentra el 40% de sus ataques en este período",
+      "scout.s1.title":"Eficiencia de Arqueros","scout.s1.text":"Detecta los sectores donde el arquero rival tiene mayor y menor cobertura. Sabés adónde tirar antes de lanzar.",
+      "scout.s2.title":"Lados Débiles y Fuertes","scout.s2.text":"Identifica qué sectores del campo adversario son más permeables al ataque con datos estadísticos concretos.",
+      "scout.s3.title":"Patrones de Juego Históricos","scout.s3.text":"Analiza cómo juega el equipo rival en distintas situaciones: bajo presión, en inferioridad numérica, en los últimos minutos.",
+      "scout.s4.title":"Preparación Táctica con Datos","scout.s4.text":"Lleva al equipo técnico un plan basado en evidencia real, no en suposiciones. Entrenás lo que realmente importa.",
+      "who.eyebrow":"Usuarios de la plataforma","who.title":"¿Para quién es HandballPro IA?",
+      "who.lead":"Para todos los que toman decisiones en handball y quieren respaldarlas con datos reales.",
+      "who.c1.title":"Entrenadores","who.c1.text":"Tomá decisiones tácticas basadas en datos concretos, no en sensaciones. Antes, durante y después del partido.",
+      "who.c1.li1":"Análisis del rival en tiempo real","who.c1.li2":"Insights automáticos por período","who.c1.li3":"Preparación táctica con scouting IA","who.c1.li4":"Evolución del rendimiento del equipo",
+      "who.c2.title":"Analistas","who.c2.text":"Dejá de cargar planillas. La plataforma hace el análisis pesado; vos lo interpretás y comunicás.",
+      "who.c2.li1":"Métricas automáticas al instante","who.c2.li2":"Heatmaps exportables","who.c2.li3":"Comparación de eventos vs resultado","who.c2.li4":"Datos históricos por partido",
+      "who.c3.title":"Equipos y Clubes","who.c3.text":"Profesionalizá el cuerpo técnico con herramientas de análisis que antes solo tenían los equipos de élite.",
+      "who.c3.li1":"Historial de partidos del equipo","who.c3.li2":"Seguimiento de jugadores","who.c3.li3":"Análisis de arqueros propios","who.c3.li4":"Ventaja competitiva real",
+      "demo.live":"Demo disponible ahora","demo.title":"Miralo en acción,<br>no solo en palabras",
+      "demo.text":"La plataforma ya está funcionando. Accedé a la demo y explorá el análisis estadístico de handball en tiempo real con datos reales de partidos.",
+      "demo.btn":"🚀 Abrir Demo Completa","demo.hint":"Acceso gratuito · Sin registro · Sin límites",
+      "road.eyebrow":"Desarrollo del producto","road.title":"Roadmap",
+      "road.lead":"El proyecto está en crecimiento constante. Cada fase agrega más poder analítico a la plataforma.",
+      "road.badge":"En producción",
+      "road.p1.phase":"Fase 1 — Actual","road.p1.title":"Sistema Core Funcionando","road.p1.text":"Registro de eventos en tiempo real, estadísticas automáticas, insights por IA, heatmaps, evolución del partido y análisis de arqueros. Todo esto ya está disponible en la demo.",
+      "road.p2.phase":"Fase 2 — En progreso","road.p2.title":"Mejoras en Insights","road.p2.text":"Refinamiento de los algoritmos de análisis. Insights más precisos, mayor contexto táctico y mejoras en la interfaz de registro de eventos.",
+      "road.p3.phase":"Fase 3 — Planificada","road.p3.title":"Historial de Equipos","road.p3.text":"Base de datos persistente por equipo. Comparaciones entre temporadas, seguimiento de jugadores y análisis de tendencias a largo plazo.",
+      "road.p4.phase":"Fase 4 — Visión","road.p4.title":"IA Predictiva Avanzada","road.p4.text":"Modelos predictivos que anticipan el resultado basándose en patrones históricos. Recomendaciones tácticas generadas por IA antes del partido.",
+      "don.eyebrow":"Proyecto independiente","don.title":"Apoyá el desarrollo",
+      "don.lead":"HandballPro IA es un proyecto independiente construido con pasión por el handball y los datos. Cada donación ayuda a escalar la infraestructura.",
+      "don.card.title":"💛 Ayudanos a crecer","don.card.text":"Este proyecto nació del amor al handball y la necesidad de análisis deportivo real y accesible. Los servidores, la base de datos y el tiempo de desarrollo tienen un costo. Tu apoyo hace que esto siga adelante.",
+      "don.card.method":"Podés donar fácilmente desde Argentina con Mercado Pago al alias:","don.card.hint":"↑ Clic para copiar el alias",
+      "don.card.footer":"Con tu ayuda podemos: mejorar la infraestructura · agregar más funcionalidades · mantener la demo gratuita · y seguir construyendo la mejor herramienta de análisis de handball.",
+      "fb.eyebrow":"Comunidad y mejora continua","fb.title":"Tu opinión construye la plataforma",
+      "fb.lead":"El producto mejora con el uso real. Si encontrás errores, tenés sugerencias o querés pedir una funcionalidad, escribinos.",
+      "fb.card.title":"💬 Mandanos tu feedback","fb.card.text":"¿La plataforma te parece útil? ¿Encontraste algo que no funciona? ¿Falta alguna funcionalidad clave para tu trabajo? Queremos saberlo.",
+      "fb.btn1":"🐛 Reportar un error","fb.btn2":"✨ Sugerir una mejora","fb.btn3":"🤝 Quiero colaborar",
+      "blog.eyebrow":"Conocimiento Aplicado","blog.title":"Del Blog",
+      "blog.lead":"Guías prácticas sobre análisis de handball, estadísticas avanzadas y scouting táctico. Todo lo que necesitás saber para trabajar con datos reales.",
+      "blog.c1.tag":"Análisis","blog.c1.title":"Cómo Analizar un Partido de Handball con Datos","blog.c1.text":"Guía paso a paso para registrar eventos, calcular métricas clave e interpretar heatmaps. Todo lo que necesitás para pasar de intuición a datos concretos.","blog.c1.time":"⏱ 6 min de lectura",
+      "blog.c2.tag":"Estadísticas","blog.c2.title":"Estadísticas de Handball: Cuáles Importan Realmente","blog.c2.text":"No todas las estadísticas dicen lo mismo. Descubrí cuáles métricas tienen mayor impacto en el resultado y cuáles son ruido que distrae al analista.","blog.c2.time":"⏱ 5 min de lectura",
+      "blog.c3.tag":"Scouting","blog.c3.title":"Scouting en Handball: Analizá a tu Rival Antes del Partido","blog.c3.text":"Cómo preparar un análisis de rival completo: qué datos recopilar, cómo interpretar los patrones ofensivos y cómo traducir eso en un plan táctico.","blog.c3.time":"⏱ 7 min de lectura",
+      "blog.read":"Leer artículo →","blog.cta":"Ver todos los artículos →",
+      "footer.brand":"Plataforma de <strong style='color:var(--text)'>análisis estadístico de handball</strong> con inteligencia artificial. Tomá decisiones tácticas basadas en datos reales.",
+      "footer.demo":"Ver Demo →","footer.nav.title":"Navegación","footer.nav.ai":"La Inteligencia Artificial","footer.nav.features":"Funcionalidades","footer.nav.scouting":"Scouting Táctico","footer.nav.support":"Apoyá el proyecto",
+      "footer.blog.title":"Blog","footer.blog.all":"Todos los artículos","footer.blog.b1":"Cómo analizar handball","footer.blog.b2":"Estadísticas avanzadas","footer.blog.b3":"Scouting del rival",
+      "footer.contact.title":"Contacto","footer.alias":"Alias MercadoPago:",
+      "footer.copy":"© 2025–2026 HandballPro IA · Proyecto independiente en desarrollo activo · <a href='mailto:marianonicolaslosada@gmail.com' style='color:var(--accent);text-decoration:none;'>marianonicolaslosada@gmail.com</a>",
+      "footer.devby":"Desarrollado por",
+      "toast":"✓ Alias copiado"
+    },
+    en: {
+      "meta.title": "HandballPro AI – Handball Statistics & AI-Powered Analysis Platform",
+      "meta.desc": "AI-powered handball statistics platform. Live match analysis, advanced handball statistics, heatmaps, goalkeeper analysis, tactical scouting and game preparation.",
+      "meta.kw": "handball statistics, handball analysis, handball scouting, handball data, handball heatmap, AI handball, handball analytics, handball performance, tactical handball",
+      "og.title": "HandballPro AI – Handball Statistics & Artificial Intelligence",
+      "og.desc": "Make tactical decisions based on data. Live handball statistics, automatic insights, heatmaps and scouting for future matches.",
+      "banner": "⚡ Active development — Some features are continuously being improved",
+      "nav.ai":"AI","nav.features":"Features","nav.scouting":"Scouting","nav.roadmap":"Roadmap","nav.blog":"Blog","nav.feedback":"Feedback","nav.demo":"View Demo →",
+      "hero.badge":"Artificial Intelligence · Handball · Sports Analytics",
+      "hero.line1":"THE DATA","hero.line2":"THAT CHANGES","hero.line3":"THE GAME",
+      "hero.sub":"AI-powered handball statistics and analysis platform. Make tactical decisions before, during and after the game — with real data, not gut feelings.",
+      "hero.cta1":"🎯 View Live Demo","hero.cta2":"✉ Send Feedback",
+      "hero.stat1":"Automated analysis","hero.stat2":"Real-time data","hero.stat3":"Automatic insights","hero.stat4":"Full match analysis",
+      "ai.eyebrow":"Artificial Intelligence Applied to Handball","ai.title":"What does the AI do?",
+      "ai.lead":"This is not a digital scoreboard. It's a system that reads the match, detects patterns and delivers conclusions that would take you hours to calculate manually.",
+      "ai.c1.title":"Reads the match","ai.c1.text":"Processes every recorded event — goals, shots, assists, turnovers — and builds a complete statistical model of the game in real time.",
+      "ai.c2.title":"Detects patterns","ai.c2.text":"Identifies trends the human eye misses: pressure zones, critical match moments, efficiency by game period.",
+      "ai.c3.title":"Generates insights","ai.c3.text":"Doesn't just show numbers. It interprets data and delivers actionable conclusions: \"the opponent loses efficiency in the last 10 minutes of the first half\".",
+      "ai.c4.title":"Anticipates behavior","ai.c4.text":"Analyzes match history to anticipate how a team will behave in different game situations — ideal for pre-match tactical preparation.",
+      "feat.eyebrow":"System tools","feat.title":"Features",
+      "feat.lead":"Each module is designed for a specific aspect of handball sports analysis.",
+      "feat.f1.tag":"Real-time","feat.f1.title":"📡 Live Analysis","feat.f1.text":"Log match events as they happen. Each action is recorded and the system updates metrics instantly, giving you a precise picture of the game at any moment.",
+      "feat.f2.tag":"Automatic","feat.f2.title":"📈 Advanced Handball Statistics","feat.f2.text":"Shot efficiency by zone, conversion percentage per player, attack distribution by sector, turnovers and many more metrics that the software calculates automatically.",
+      "feat.f3.tag":"Intelligence","feat.f3.title":"💬 Automatic Insights","feat.f3.text":"The system doesn't just show raw data. It generates clear-language conclusions about what's happening tactically, what's working and what's not.",
+      "feat.f4.tag":"Visual","feat.f4.title":"🔥 Game Heatmaps","feat.f4.text":"Visualize on a heat map where shots, turnovers and offensive actions concentrate for each team. Understand the match at a glance.",
+      "feat.f5.tag":"Time-based","feat.f5.title":"⏱ Match Evolution","feat.f5.text":"Track how team performance changes over time. Identify the moments where the match turned and why.",
+      "feat.f6.tag":"Comparative","feat.f6.title":"⚖️ Events vs Result","feat.f6.text":"Compare recorded events against the final result to understand whether the scoreline reflects actual performance — or if a team deserved more.",
+      "scout.eyebrow":"Scouting & tactical preparation","scout.title":"Prepare for the match before you play it",
+      "scout.lead":"This is the most powerful feature of the platform. Using match history, the AI analyzes the opponent and delivers a tactical report before you step on the court.",
+      "scout.pill1.title":"Right side: weak zone detected","scout.pill1.desc":"38% shot efficiency to the far post",
+      "scout.pill2.title":"Goalkeeper: poor high coverage","scout.pill2.desc":"High angle shots: 71% conversion rate against",
+      "scout.pill3.title":"Critical moment: min 25–35","scout.pill3.desc":"Opponent concentrates 40% of attacks in this period",
+      "scout.s1.title":"Goalkeeper Efficiency","scout.s1.text":"Detects the sectors where the opposing goalkeeper has the most and least coverage. You know where to shoot before you take the shot.",
+      "scout.s2.title":"Weak & Strong Sides","scout.s2.text":"Identifies which sectors of the opponent's field are most vulnerable to attack with concrete statistical data.",
+      "scout.s3.title":"Historical Game Patterns","scout.s3.text":"Analyzes how the opposing team plays in different situations: under pressure, in numerical disadvantage, in the final minutes.",
+      "scout.s4.title":"Data-Driven Tactical Preparation","scout.s4.text":"Brings the coaching staff a plan based on real evidence, not assumptions. You train what actually matters.",
+      "who.eyebrow":"Platform users","who.title":"Who is HandballPro AI for?",
+      "who.lead":"For everyone who makes decisions in handball and wants to back them with real data.",
+      "who.c1.title":"Coaches","who.c1.text":"Make tactical decisions based on concrete data, not gut feelings. Before, during and after the match.",
+      "who.c1.li1":"Real-time opponent analysis","who.c1.li2":"Automatic insights by period","who.c1.li3":"Tactical prep with AI scouting","who.c1.li4":"Team performance evolution",
+      "who.c2.title":"Analysts","who.c2.text":"Stop filling spreadsheets. The platform does the heavy analysis; you interpret and communicate.",
+      "who.c2.li1":"Instant automatic metrics","who.c2.li2":"Exportable heatmaps","who.c2.li3":"Events vs result comparison","who.c2.li4":"Historical data per match",
+      "who.c3.title":"Teams & Clubs","who.c3.text":"Professionalize the coaching staff with analysis tools that were previously only available to elite teams.",
+      "who.c3.li1":"Team match history","who.c3.li2":"Player tracking","who.c3.li3":"Own goalkeeper analysis","who.c3.li4":"Real competitive advantage",
+      "demo.live":"Demo available now","demo.title":"See it in action,<br>not just in words",
+      "demo.text":"The platform is live. Access the demo and explore real-time handball statistics and analysis with real match data.",
+      "demo.btn":"🚀 Open Full Demo","demo.hint":"Free access · No registration · No limits",
+      "road.eyebrow":"Product development","road.title":"Roadmap",
+      "road.lead":"The project is constantly growing. Each phase adds more analytical power to the platform.",
+      "road.badge":"In production",
+      "road.p1.phase":"Phase 1 — Current","road.p1.title":"Core System Live","road.p1.text":"Real-time event logging, automatic statistics, AI insights, heatmaps, match evolution and goalkeeper analysis. All of this is already available in the demo.",
+      "road.p2.phase":"Phase 2 — In progress","road.p2.title":"Insight Improvements","road.p2.text":"Refinement of analysis algorithms. More precise insights, greater tactical context and improvements to the event logging interface.",
+      "road.p3.phase":"Phase 3 — Planned","road.p3.title":"Team History","road.p3.text":"Persistent database per team. Season comparisons, player tracking and long-term trend analysis.",
+      "road.p4.phase":"Phase 4 — Vision","road.p4.title":"Advanced Predictive AI","road.p4.text":"Predictive models that anticipate results based on historical patterns. AI-generated tactical recommendations before the match.",
+      "don.eyebrow":"Independent project","don.title":"Support development",
+      "don.lead":"HandballPro AI is an independent project built with passion for handball and data. Every donation helps scale the infrastructure.",
+      "don.card.title":"💛 Help us grow","don.card.text":"This project was born from a love of handball and the need for real, accessible sports analysis. Servers, database and development time all have a cost. Your support — however small — keeps this going.",
+      "don.card.method":"You can donate easily from Argentina via Mercado Pago to the alias:","don.card.hint":"↑ Click to copy the alias",
+      "don.card.footer":"With your help we can: improve infrastructure · add more features · keep the demo free · and keep building the best handball analysis tool.",
+      "fb.eyebrow":"Community & continuous improvement","fb.title":"Your feedback builds the platform",
+      "fb.lead":"The product improves through real use. If you find bugs, have suggestions or want to request a feature, reach out.",
+      "fb.card.title":"💬 Send us your feedback","fb.card.text":"Do you find the platform useful? Found something that doesn't work? Missing a key feature for your work? We want to know.",
+      "fb.btn1":"🐛 Report a bug","fb.btn2":"✨ Suggest an improvement","fb.btn3":"🤝 I want to collaborate",
+      "blog.eyebrow":"Applied Knowledge","blog.title":"From the Blog",
+      "blog.lead":"Practical guides on handball analysis, advanced statistics and tactical scouting. Everything you need to work with real data.",
+      "blog.c1.tag":"Analysis","blog.c1.title":"How to Analyze a Handball Match with Data","blog.c1.text":"Step-by-step guide to logging events, calculating key metrics and interpreting heatmaps. Everything you need to move from intuition to concrete data.","blog.c1.time":"⏱ 6 min read",
+      "blog.c2.tag":"Statistics","blog.c2.title":"Handball Statistics: Which Ones Actually Matter","blog.c2.text":"Not all statistics tell the same story. Discover which metrics have the greatest impact on the result and which are just noise distracting the analyst.","blog.c2.time":"⏱ 5 min read",
+      "blog.c3.tag":"Scouting","blog.c3.title":"Handball Scouting: Analyze Your Opponent Before the Match","blog.c3.text":"How to prepare a complete opponent analysis: what data to collect, how to interpret offensive patterns and how to translate that into a tactical plan.","blog.c3.time":"⏱ 7 min read",
+      "blog.read":"Read article →","blog.cta":"View all articles →",
+      "footer.brand":"<strong style='color:var(--text)'>Handball statistics</strong> and AI analysis platform. Make tactical decisions based on real data.",
+      "footer.demo":"View Demo →","footer.nav.title":"Navigation","footer.nav.ai":"The AI","footer.nav.features":"Features","footer.nav.scouting":"Tactical Scouting","footer.nav.support":"Support the project",
+      "footer.blog.title":"Blog","footer.blog.all":"All articles","footer.blog.b1":"How to analyze handball","footer.blog.b2":"Advanced statistics","footer.blog.b3":"Opponent scouting",
+      "footer.contact.title":"Contact","footer.alias":"MercadoPago Alias:",
+      "footer.copy":"© 2025–2026 HandballPro AI · Independent project in active development · <a href='mailto:marianonicolaslosada@gmail.com' style='color:var(--accent);text-decoration:none;'>marianonicolaslosada@gmail.com</a>",
+      "footer.devby":"Developed by",
+      "toast":"✓ Copied"
     }
+  };
 
-    // ─── NAV: highlight active section ───
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('.nav-links a');
+  let currentLang = 'es';
 
-    const sectionObs = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(e => {
-          if (e.isIntersecting) {
-            navLinks.forEach(a => a.style.color = '');
-            const active = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
-            if (active && !active.classList.contains('nav-cta')) active.style.color = 'var(--text)';
-          }
-        });
-      },
-      { rootMargin: '-30% 0px -60% 0px' }
-    );
-    sections.forEach(s => sectionObs.observe(s));
+  function setLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('hpro-lang', lang);
+
+    // Update html lang attribute
+    document.getElementById('html-root').setAttribute('lang', lang);
+
+    // Update active button
+    document.getElementById('btn-es').classList.toggle('active', lang === 'es');
+    document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+
+    // Update meta tags
+    document.getElementById('meta-title').textContent = T[lang]['meta.title'];
+    document.querySelector('title') && (document.title = T[lang]['meta.title']);
+    document.getElementById('meta-description').content = T[lang]['meta.desc'];
+    document.getElementById('meta-keywords').content = T[lang]['meta.kw'];
+    document.getElementById('og-title').content = T[lang]['og.title'];
+    document.getElementById('og-description').content = T[lang]['og.desc'];
+    document.getElementById('og-locale').content = lang === 'es' ? 'es_AR' : 'en_US';
+    document.getElementById('tw-title').content = T[lang]['meta.title'];
+    document.getElementById('tw-description').content = T[lang]['og.desc'];
+
+    // Update all data-i18n elements
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      const val = T[lang][key];
+      if (val !== undefined) {
+        el.innerHTML = val;
+      }
+    });
+  }
+
+  // Auto-detect language on load
+  (function() {
+    const saved = localStorage.getItem('hpro-lang');
+    const browserLang = navigator.language || navigator.userLanguage || 'es';
+    const isEnglish = saved === 'en' || (!saved && browserLang.startsWith('en'));
+    setLang(isEnglish ? 'en' : 'es');
+  })();
+
+  // ─── SCROLL REVEAL ───
+  const reveals = document.querySelectorAll('[data-reveal]');
+  const observer = new IntersectionObserver(
+    entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); observer.unobserve(e.target); } }),
+    { threshold: 0.12 }
+  );
+  reveals.forEach(el => observer.observe(el));
+
+  // ─── STAGGERED CHILDREN ───
+  document.querySelectorAll('.features-list .feature-card').forEach((el, i) => {
+    el.style.transitionDelay = `${i * 80}ms`;
+  });
+
+  // ─── COPY ALIAS ───
+  function copyAlias() {
+    navigator.clipboard.writeText('arana.cai').then(() => {
+      const toast = document.getElementById('toast');
+      toast.textContent = T[currentLang]['toast'] || '✓ Copiado';
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2500);
+    });
+  }
+
+  // ─── NAV ACTIVE ───
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  const sectionObs = new IntersectionObserver(
+    entries => entries.forEach(e => {
+      if (e.isIntersecting) {
+        navLinks.forEach(a => a.style.color = '');
+        const active = document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
+        if (active && !active.classList.contains('nav-cta')) active.style.color = 'var(--text)';
+      }
+    }),
+    { rootMargin: '-30% 0px -60% 0px' }
+  );
+  sections.forEach(s => sectionObs.observe(s));
   </script>
-
 </body>
 </html>
