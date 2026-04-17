@@ -1,17 +1,32 @@
 {
   "rewrites": [
-    { "source": "/blog",                                    "destination": "/blog/index.html" },
-    { "source": "/blog/",                                   "destination": "/blog/index.html" },
-    { "source": "/blog/como-analizar-partido-handball",     "destination": "/blog/como-analizar-partido-handball/index.html" },
-    { "source": "/blog/como-analizar-partido-handball/",    "destination": "/blog/como-analizar-partido-handball/index.html" },
-    { "source": "/blog/estadisticas-handball-avanzadas",    "destination": "/blog/estadisticas-handball-avanzadas/index.html" },
-    { "source": "/blog/estadisticas-handball-avanzadas/",   "destination": "/blog/estadisticas-handball-avanzadas/index.html" },
-    { "source": "/blog/scouting-handball-analisis-rival",   "destination": "/blog/scouting-handball-analisis-rival/index.html" },
-    { "source": "/blog/scouting-handball-analisis-rival/",  "destination": "/blog/scouting-handball-analisis-rival/index.html" },
-    { "source": "/analisis-handball",                       "destination": "/" },
-    { "source": "/estadisticas-handball",                   "destination": "/" },
-    { "source": "/scouting-handball",                       "destination": "/" },
-    { "source": "/software-handball",                       "destination": "/" }
+    { "source": "/blog",                                                  "destination": "/blog/index.html" },
+    { "source": "/blog/",                                                 "destination": "/blog/index.html" },
+
+    { "source": "/blog/como-analizar-partido-handball",                   "destination": "/blog/como-analizar-partido-handball/index.html" },
+    { "source": "/blog/como-analizar-partido-handball/",                  "destination": "/blog/como-analizar-partido-handball/index.html" },
+    { "source": "/blog/how-to-analyze-handball-game",                     "destination": "/blog/como-analizar-partido-handball/index.html" },
+    { "source": "/blog/how-to-analyze-handball-game/",                    "destination": "/blog/como-analizar-partido-handball/index.html" },
+
+    { "source": "/blog/estadisticas-handball-avanzadas",                  "destination": "/blog/estadisticas-handball-avanzadas/index.html" },
+    { "source": "/blog/estadisticas-handball-avanzadas/",                 "destination": "/blog/estadisticas-handball-avanzadas/index.html" },
+    { "source": "/blog/advanced-handball-statistics",                     "destination": "/blog/estadisticas-handball-avanzadas/index.html" },
+    { "source": "/blog/advanced-handball-statistics/",                    "destination": "/blog/estadisticas-handball-avanzadas/index.html" },
+
+    { "source": "/blog/scouting-handball-analisis-rival",                 "destination": "/blog/scouting-handball-analisis-rival/index.html" },
+    { "source": "/blog/scouting-handball-analisis-rival/",                "destination": "/blog/scouting-handball-analisis-rival/index.html" },
+    { "source": "/blog/handball-scouting-opponent-analysis",              "destination": "/blog/scouting-handball-analisis-rival/index.html" },
+    { "source": "/blog/handball-scouting-opponent-analysis/",             "destination": "/blog/scouting-handball-analisis-rival/index.html" },
+
+    { "source": "/analisis-handball",                                     "destination": "/" },
+    { "source": "/estadisticas-handball",                                 "destination": "/" },
+    { "source": "/scouting-handball",                                     "destination": "/" },
+    { "source": "/software-handball",                                     "destination": "/" },
+
+    { "source": "/handball-analysis",                                     "destination": "/" },
+    { "source": "/handball-statistics",                                   "destination": "/" },
+    { "source": "/handball-scouting",                                     "destination": "/" },
+    { "source": "/handball-software",                                     "destination": "/" }
   ],
   "headers": [
     {
