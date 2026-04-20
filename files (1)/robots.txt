@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
+Sitemap: https://landing-handball.vercel.app/sitemap_index.xml
 Sitemap: https://landing-handball.vercel.app/sitemap.xml
